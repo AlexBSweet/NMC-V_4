@@ -1,0 +1,40 @@
+section.info{
+    background-color: var(--lg);
+    position:sticky;
+    top:0;
+    z-index: -1;
+    padding:40px 30px 40px;
+    color:var(--bg-color);
+    min-height: 100vh;
+}
+div.info-header{
+    grid-column: 1/13;
+    margin-bottom: 60px;
+}
+section.info div.info-header h1{
+    font-size: 5vw;
+    font-variation-settings: 'wght' 500, 'slnt' 0;
+}
+div.info-left{
+    grid-column: 1/6;
+}
+div.info-middle{
+    grid-column: 7/13;
+}
+.title{
+    font-family: NMC Red;
+    font-variation-settings: 'wght' 700, 'slnt' 0;
+}
+section.info a{
+    font-size: 2.5vw;
+    font-variation-settings: 'wght' 500, 'slnt' 0;
+    margin:0;
+    opacity: 0.8;
+    color: var(--bg-color);
+}
+section.info h1{
+    font-size: 2.5vw;
+    font-variation-settings: 'wght' 100, 'slnt' 0;
+    margin:0;
+    max-width: 650px;
+}

@@ -1,0 +1,416 @@
+
+/* NMC RED STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Red";
+    src: url(../fonts/nmc-red/Introv2.0GX.ttf);
+}
+.nmc-red-el{
+    font-variation-settings: 'wght' 100, 'slnt' 0;
+}
+.nmc-red-l{
+    font-variation-settings: 'wght' 200, 'slnt' 0;
+}
+.nmc-red-r{
+    font-variation-settings: 'wght' 400, 'slnt' 0;
+}
+.nmc-red-m{
+    font-variation-settings: 'wght' 500, 'slnt' 0;
+}
+.nmc-red-sb{
+    font-variation-settings: 'wght' 600, 'slnt' 0;
+}
+.nmc-red-b{
+    font-variation-settings: 'wght' 700, 'slnt' 0;
+}
+.nmc-red-bl{
+    font-variation-settings: 'wght' 800, 'slnt' 0;
+}
+.nmc-red-el-i{
+    font-variation-settings: 'wght' 100, 'slnt' 1;
+}
+.nmc-red-l-i{
+    font-variation-settings: 'wght' 200, 'slnt' 1;
+}
+.nmc-red-r-i{
+    font-variation-settings: 'wght' 400, 'slnt' 1;
+}
+.nmc-red-m-i{
+    font-variation-settings: 'wght' 500, 'slnt' 1;
+}
+.nmc-red-sb-i{
+    font-variation-settings: 'wght' 600, 'slnt' 1;
+}
+.nmc-red-b-i{
+    font-variation-settings: 'wght' 700, 'slnt' 1;
+}
+.nmc-red-bl-i{
+    font-variation-settings: 'wght' 800, 'slnt' 1;
+}
+
+
+
+/* NMC RED MONO STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Red Mono";
+    src: url(../fonts/nmc-red-mono/Intro-Monov1.01GX.ttf);
+}
+.nmc-red-mono-el{
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 100, 'slnt' 0;
+}
+.nmc-red-mono-l{
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 200, 'slnt' 0;
+}
+.nmc-red-mono-r{
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 400, 'slnt' 0;
+}
+.nmc-red-mono-m{
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 500, 'slnt' 0;
+}
+.nmc-red-mono-sb{
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 600, 'slnt' 0;
+}
+.nmc-red-mono-b{
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 700, 'slnt' 0;
+}
+.nmc-red-mono-bl{
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 800, 'slnt' 0;
+}
+
+
+
+/* NMC SELATA DISPLAY STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Serata Display Thin";
+    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Thin.otf);
+    font-weight: 100;
+}
+@font-face{
+    font-family: "NMC Serata Display Extra-Light";
+    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Extra-Light.otf);
+    font-weight: 200;
+}
+@font-face{
+    font-family: "NMC Serata Display Light";
+    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Light.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: "NMC Serata Display Regular";
+    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "NMC Serata Display Medium";
+    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: "NMC Serata Display Semi-Bold";
+    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Semi-Bold.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: "NMC Serata Display Bold";
+    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Bold.otf);
+    font-weight: 700;
+}
+.nmc-serata-d-t{
+    font-family: NMC Serata Display Thin;
+}
+.nmc-serata-d-el{
+    font-family: NMC Serata Display Extra-Light;
+}
+.nmc-serata-d-l{
+    font-family: NMC Serata Display Light;
+}
+.nmc-serata-d-r{
+    font-family: NMC Serata Display Regular;
+}
+.nmc-serata-d-m{
+    font-family: NMC Serata Display Medium;
+}
+.nmc-serata-d-sb{
+    font-family: NMC Serata Display Semi-Bold;
+}
+.nmc-serata-d-b{
+    font-family: NMC Serata Display Bold;
+}
+
+
+
+
+
+
+/* NMC SELATA TEXT STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Serata Text Light";
+    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-LightText.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: "NMC Serata Text Regular";
+    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-RegularText.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: "NMC Serata Text Medium";
+    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-MediumText.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: "NMC Serata Text Semi-Bold";
+    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-Semi-Boldtext.otf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: "NMC Serata Text Bold";
+    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-BoldText.otf);
+    font-weight: 300;
+}
+.nmc-serata-t-l{
+    font-family: NMC Serata Text Light;
+}
+.nmc-serata-t-r{
+    font-family: NMC Serata Text Regular;
+}
+.nmc-serata-t-m{
+    font-family: NMC Serata Text Medium;
+}
+.nmc-serata-t-sb{
+    font-family: NMC Serata Text Semi-Bold;
+}
+.nmc-serata-t-b{
+    font-family: NMC Serata Text Bold;
+}
+
+
+
+
+
+
+
+
+
+/* NMC GROTESK STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Grotesk Thin";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Thin.otf');
+    font-weight: 100;
+}
+@font-face{
+    font-family: "NMC Grotesk Extra-Light";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Extra-Light.otf');
+    font-weight: 200;
+}
+@font-face{
+    font-family: "NMC Grotesk Light";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Light.otf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: "NMC Grotesk Regular";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Regular.otf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: "NMC Grotesk Medium";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Medium.otf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: "NMC Grotesk Semi-Bold";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Semi-Bold.otf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: "NMC Grotesk Bold";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Bold.otf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: "NMC Grotesk Black";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Black.otf');
+    font-weight: 800;
+}
+@font-face{
+    font-family: "NMC Grotesk Heavy";
+    src: url('../fonts/nmc-grotesk/NMCGroteskv0.3-Heavy.otf');
+    font-weight: 900;
+}
+.nmc-grotesk-t{
+    font-family: NMC Grotesk Thin ;
+}
+.nmc-grotesk-el{
+    font-family: NMC Grotesk Extra-Light ;
+}
+.nmc-grotesk-l{
+    font-family: NMC Grotesk Light ;
+}
+.nmc-grotesk-r{
+    font-family: NMC Grotesk Regular ;
+}
+.nmc-grotesk-m{
+    font-family: NMC Grotesk Medium ;
+}
+.nmc-grotesk-sb{
+    font-family: NMC Grotesk Semi-Bold ;
+}
+.nmc-grotesk-b{
+    font-family: NMC Grotesk Bold ;
+}
+.nmc-grotesk-bl{
+    font-family: NMC Grotesk Black ;
+}
+.nmc-grotesk-h{
+    font-family: NMC Grotesk Heavy ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* NMC DOUBLE STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Double";
+    src: url('../fonts/nmc-double/DoubleWidev0.1GX.ttf');
+}
+.nmc-double{
+    font-family: NMC Double;
+}
+
+
+
+
+
+
+
+
+
+/* NMC BECK STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Bellinger Regular";
+    src: url('../fonts/nmc-kent/Kedziev0.7.1-Regular.otf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: "NMC Bellinger Medium";
+    src: url('../fonts/nmc-kent/Kedziev0.7.1-Medium.otf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: "NMC Bellinger Semi-Bold";
+    src: url('../fonts/nmc-kent/Kedziev0.7.1-Semi-Bold.otf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: "NMC Bellinger Bold";
+    src: url('../fonts/nmc-kent/Kedziev0.7.1-Bold.otf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: "NMC Bellinger Heavy";
+    src: url('../fonts/nmc-kent/Kedziev0.7.1-Heavy.otf');
+    font-weight: 800;
+}
+@font-face{
+    font-family: "NMC Bellinger Ultra";
+    src: url('../fonts/nmc-kent/Kedziev0.7.1-Ultra.otf');
+    font-weight: 900;
+}
+@font-face{
+    font-family: "NMC Bellinger Italic";
+    src: url('../fonts/nmc-kent/KedzieItalicv0.7-Regular.otf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: "NMC Bellinger Medium Italic";
+    src: url('../fonts/nmc-kent/KedzieItalicv0.7-Medium.otf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: "NMC Bellinger Semi-Bold Italic";
+    src: url('../fonts/nmc-kent/KedzieItalicv0.7-Semi-Bold.otf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: "NMC Bellinger Bold Italic";
+    src: url('../fonts/nmc-kent/KedzieItalicv0.7-Bold.otf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: "NMC Bellinger Heavy Italic";
+    src: url('../fonts/nmc-kent/KedzieItalicv0.7-Heavy.otf');
+    font-weight: 800;
+}
+@font-face{
+    font-family: "NMC Bellinger Ultra Italic";
+    src: url('../fonts/nmc-kent/KedzieItalicv0.7-Ultra.otf');
+    font-weight: 900;
+}
+.nmc-beck-r{
+    font-family: NMC Bellinger Regular;
+}
+.nmc-beck-m{
+    font-family: NMC Bellinger Medium;
+}
+.nmc-beck-sb{
+    font-family: NMC Bellinger Semi-Bold;
+}
+.nmc-beck-b{
+    font-family: NMC Bellinger Bold;
+}
+.nmc-beck-h{
+    font-family: NMC Bellinger Heavy;
+}
+.nmc-beck-u{
+    font-family: NMC Bellinger Ultra;
+}
+.nmc-beck-r-i{
+    font-family: NMC Bellinger Italic;
+}
+.nmc-beck-m-i{
+    font-family: NMC Bellinger Medium Italic;
+}
+.nmc-beck-sb-i{
+    font-family: NMC Bellinger Semi-Bold Italic;
+}
+.nmc-beck-b-i{
+    font-family: NMC Bellinger Bold Italic;
+}
+.nmc-beck-h-i{
+    font-family: NMC Bellinger Heavy Italic;
+}
+.nmc-beck-u-i{
+    font-family: NMC Bellinger Ultra Italic;
+}
+
+
+
+
+
+
+
+
+/* NMC GRIFFE STYLES ===================================================================*/
+@font-face{
+    font-family: "NMC Griffe";
+    src: url('../fonts/nmc-griffe/SharpStencil-Regular.otf');
+    font-weight: 400;
+}
+.nmc-griffe{
+    font-family: NMC Griffe;
+}

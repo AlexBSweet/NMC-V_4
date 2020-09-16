@@ -1,0 +1,59 @@
+
+section.tf-intro{
+    background-color: rgb(255, 65, 65);
+}
+/* div.tf-intro-inner{
+    top: 70vh;
+} */
+h1.tf-page-title{
+    font-size: 13vw;
+    line-height: 0.9;
+}
+div.tf-intro-left{
+    margin-top:40px;
+}
+
+
+
+div.sample{
+    /* border-top:1px solid var(--mid-gray-1); */
+    margin-bottom: 100px;
+}
+p.sample-text{
+    font-size: 12vw;
+    margin:-70px 0 0px 0;
+    overflow-x: hidden;
+    line-height: 1.3;
+    position:relative;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+
+div.sample-one p.sample-text{
+    font-size: 12vw;
+}
+div.sample-three p.sample-text{
+    font-size: 15vw;
+}
+div.sample-four p.sample-text{
+    font-size: 6vw;
+}
+div.sample-five p.sample-text{
+    font-size: 8.4vw;
+}
+div.sample-seven p.sample-text{
+    font-size: 8.4vw;
+}
+
+
+div.active-glyph-container{
+    font-family: NMC Serata Display Regular;
+}
+section.glyphs-category div{
+    font-family: NMC Serata Display Regular;
+}
+
+
+h1.tester-text{
+    font-size:160px;
+}

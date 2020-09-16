@@ -1,0 +1,18 @@
+@media(max-width:900px){
+    div.sections-links{
+        display:none;
+    }
+    div.option.change-text{
+        display:none;
+    }
+    .bw-icon{
+        display:none;
+    }
+    section.tf-glyphs{
+        display:none;
+    }
+    p.top-link{
+        grid-column: 1/13;
+        grid-row: 3;
+    }
+}
