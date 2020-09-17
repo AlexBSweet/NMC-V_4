@@ -146,7 +146,7 @@ div.mobile-menu{
   width:100vw;
   background-color: black;
   padding:20px 32px;
-  padding-top: 360px;
+  padding-top: 50vh;
   display: none;
   overflow-x: scroll;
 }
@@ -156,13 +156,12 @@ div.mobile-menu.open{
 a.mm-site-title{
   font-size:28px;
   position: fixed;
-  top:44px;
+  top:3vh;
   left:32px;
 }
 div.mm-links{
-  margin-top:90px;
   position:fixed;
-  top:90px;
+  top:25vh;
   left:32px;
 }
 div.mm-links a{
@@ -181,7 +180,7 @@ div.mm-fonts-container{
 }
 p.mm-fonts-title{
   position:fixed;
-  top:360px;
+  top:50vh;
   left:32px;
   width:500vw; 
   border-bottom: 1px solid;
