@@ -2,6 +2,16 @@
     div.tf-intro-inner p{
         font-size:14px;
     }
+    div.tf-header-left, div.tf-header-right{
+        font-size: 18px;
+    }
+    img.bw-icon{
+        max-width: 30px;
+    }
+    p.top-link{
+        height:140px;
+        width:140px;
+    }
 }
 
 
@@ -25,9 +35,6 @@
 
 
 @media(max-width:900px){
-        div.sections-links{
-            display:none;
-        }
         div.option.change-text{
             display:none;
         }
@@ -35,6 +42,9 @@
             display:none;
         }
         section.tf-glyphs{
+            display:none;
+        }
+        section.tf-tester{
             display:none;
         }
         p.top-link{
@@ -45,19 +55,31 @@
 
 
 @media(max-width:800px){
+    .small-type{
+        font-size: 12px;
+    }
+    div.header-bg{
+        height:42px;
+    }
+    div.sections-links{
+        display:none;
+    }
     div.tf-intro-inner p{
-        font-size:16px;
+        font-size:14px;
     }
     section.tf-styles{
         display:block;
     }
     div.tf-styles-left{
         width:90vw;
-        font-size:10vw;
+        font-size:7vw;
     }
     div.tf-styles-right{
         width:90vw;
-        font-size:10vw;
+        font-size:7vw;
+    }
+    div.tf-header-left{
+        display: none;
     }
     div.tf-header-right{
         display:none;
@@ -65,12 +87,24 @@
     div.tf-header-right-mobile{
         display: block;
       }
+      div.divider{
+          display:none;
+      }
 }
 
 
 @media(max-width:600px){
+   :root{
+       --padding: 10px 10px;
+   }
+   div.tf-header-left span{
+       opacity: 0.5;
+   }
+    div.tf-intro-right{
+        width:80vw;
+    }
     div.tf-intro-inner p{
-        font-size:16px;
+        font-size:12px;
     }
    div.tester-options{
        display:none;
@@ -78,4 +112,29 @@
    div.divider{
        max-width: 80vw;
    }
+   h1.tf-page-title{
+    margin-bottom: 40px;
+    font-size: 20vw;
+    }
+    section.tf-samples{
+        padding-top:80px;
+    }
+    div.sample{
+        margin-bottom: 100px;
+        border-top: 1px solid gray;
+    }
+    div.sample-options{
+        padding-top:20px;
+    }
+    .select-css{
+        font-size: 16px;
+    }
+    div.option label{
+        font-size:16px;
+        margin-top:0px;
+    }
+    div.option:nth-child(2){
+        grid-column: 1/10;
+    }
+
 }

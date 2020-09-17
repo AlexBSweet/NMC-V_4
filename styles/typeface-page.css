@@ -131,7 +131,12 @@ div.hover-img img{
 }
 
 
-
+a.mobile-menu-link{
+  position: fixed;
+  top:12px;
+  right:32px;
+  z-index: 20;
+}
 div.mobile-menu{
   position:fixed;
   top:0;
@@ -140,14 +145,62 @@ div.mobile-menu{
   height:100vh;
   width:100vw;
   background-color: black;
-  /* display:none; */
-  padding:var(--padding);
-  padding-top: 60px;
+  padding:20px 32px;
+  padding-top: 360px;
   display: none;
+  overflow-x: scroll;
 }
 div.mobile-menu.open{
   display:block;
 }
+a.mm-site-title{
+  font-size:28px;
+  position: fixed;
+  top:44px;
+  left:32px;
+}
+div.mm-links{
+  margin-top:90px;
+  position:fixed;
+  top:90px;
+  left:32px;
+}
+div.mm-links a{
+  display:block;
+  margin-bottom:20px;
+  font-size:28px;
+}
+div.mm-fonts-container{
+  /* height:400px; */
+  width:500vw;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 32px 0px;
+  margin-top:12px;
+  /* white-space: nowrap; */
+}
+p.mm-fonts-title{
+  position:fixed;
+  top:360px;
+  left:32px;
+  width:500vw; 
+  border-bottom: 1px solid;
+}
+div.mm-font{
+  display: inline-block;
+}
+div.mm-font-inner{
+  height:250px;
+  width:250px;
+  margin-right: 40px;
+  font-size: 128px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:1px solid gray;
+  margin-bottom:10px;
+}
+/* 
 div.mobile-menu a{
   display:block;
   margin-bottom: 10px;
@@ -165,7 +218,7 @@ div.mobile-tf-index a{
 }
 div.mobile-menu a.mobile-menu-active{
   color:white;
-}
+} */
 
 
 
@@ -204,6 +257,10 @@ div.tf-header-left p{
 }
 div.tf-header-left a{
     opacity: 0.3;
+}
+div.tf-header-left a.home{
+  opacity: 1;
+  margin-right:5px;
 }
 div.tf-header-left a.current-section{
   opacity: 1;
@@ -268,7 +325,7 @@ div.tf-intro-right p{
     font-size: 14px;
     font-family: NMC Red Mono;
     font-variation-settings: 'wght' 100, 'slnt' 0;
-    border-top: 1px solid var(--mid-gray-1);
+    border-top: 1px solid;
     padding-top:12px;
     letter-spacing: 0.08;
 }
@@ -292,7 +349,7 @@ section.tf-styles{
     z-index: 2;
     padding: var(--padding);
     padding-top: 100px;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
     font-size: 3vw;
     display: flex;
 }
@@ -531,7 +588,7 @@ div.option:nth-child(3){
     display: flex;
     justify-content: center;
   }
-  h1.tester-text{
+  a.tester-text{
     cursor:pointer;
     font-size:120px;
     margin-top:200px;
