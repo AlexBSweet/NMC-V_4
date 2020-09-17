@@ -1,4 +1,7 @@
 @media(max-width:1200px){
+    div.header-bg{
+        height:65px;
+    }
     div.tf-intro-inner p{
         font-size:14px;
     }
@@ -53,7 +56,17 @@
         }
 }
 
-
+@media(min-width:800px){
+    div.mobile-menu{
+        display:none;
+    }
+    a.mobile-menu-link{
+        display:none;
+    }
+    a.mm-site-title{
+        display:none;
+    }
+}
 @media(max-width:800px){
     .small-type{
         font-size: 12px;
@@ -94,9 +107,9 @@
 
 
 @media(max-width:600px){
-   :root{
+   /* :root{
        --padding: 10px 10px;
-   }
+   } */
    div.tf-header-left span{
        opacity: 0.5;
    }

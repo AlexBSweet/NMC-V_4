@@ -130,12 +130,20 @@ div.hover-img img{
   max-width: 100%;
 }
 
-
+a.mm-site-title{
+  font-size:18px;
+  position: fixed;
+  top:2vh;
+  left:32px;
+  font-variation-settings: 'wght' 700;
+  z-index: 6;
+}
 a.mobile-menu-link{
+  font-size:18px;
   position: fixed;
   top:12px;
   right:32px;
-  z-index: 20;
+  z-index: 6;
 }
 div.mobile-menu{
   position:fixed;
@@ -146,45 +154,29 @@ div.mobile-menu{
   width:100vw;
   background-color: black;
   padding:20px 32px;
-  padding-top: 38vh;
+  padding-top: 100px;
   display: none;
   overflow-x: scroll;
 }
 div.mobile-menu.open{
   display:block;
 }
-a.mm-site-title{
-  font-size:22px;
-  position: fixed;
-  top:2vh;
-  left:32px;
-  font-variation-settings: 'wght' 700;
-}
-div.mm-links{
-  position:fixed;
-  top:15vh;
-  left:32px;
-}
 div.mm-links a{
   display:block;
   margin-bottom:20px;
   font-size:18px;
 }
+p.mm-fonts-title{
+  left:32px;
+  /* border-bottom: 1px solid; */
+  color:gray;
+  margin-top:32px;
+}
 div.mm-fonts-container{
-  /* height:400px; */
-  width:500vw;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 32px 0px;
-  margin-top:12px;
-  /* white-space: nowrap; */
-}
-p.mm-fonts-title{
-  position:fixed;
-  top:38vh;
-  left:32px;
-  width:500vw; 
-  border-bottom: 1px solid;
+  padding: 22px 0px;
+  white-space: nowrap;
 }
 div.mm-font{
   display: inline-block;
@@ -657,4 +649,5 @@ div.option:nth-child(3){
   section.tf-download{
     height:100vh;
     background-color:gray;
+    display:none;
   }
