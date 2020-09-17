@@ -146,7 +146,7 @@ div.mobile-menu{
   width:100vw;
   background-color: black;
   padding:20px 32px;
-  padding-top: 50vh;
+  padding-top: 42vh;
   display: none;
   overflow-x: scroll;
 }
@@ -154,20 +154,20 @@ div.mobile-menu.open{
   display:block;
 }
 a.mm-site-title{
-  font-size:28px;
+  font-size:22px;
   position: fixed;
   top:3vh;
   left:32px;
 }
 div.mm-links{
   position:fixed;
-  top:25vh;
+  top:18vh;
   left:32px;
 }
 div.mm-links a{
   display:block;
   margin-bottom:20px;
-  font-size:28px;
+  font-size:18px;
 }
 div.mm-fonts-container{
   /* height:400px; */
@@ -180,7 +180,7 @@ div.mm-fonts-container{
 }
 p.mm-fonts-title{
   position:fixed;
-  top:50vh;
+  top:42vh;
   left:32px;
   width:500vw; 
   border-bottom: 1px solid;
@@ -189,8 +189,8 @@ div.mm-font{
   display: inline-block;
 }
 div.mm-font-inner{
-  height:250px;
-  width:250px;
+  height:220px;
+  width:220px;
   margin-right: 40px;
   font-size: 128px;
   display:flex;
@@ -198,6 +198,10 @@ div.mm-font-inner{
   justify-content: center;
   border:1px solid gray;
   margin-bottom:10px;
+}
+div.mm-font-inner.active{
+  background-color:rgba(255, 255, 255, 0.76);
+  color:black;
 }
 /* 
 div.mobile-menu a{
