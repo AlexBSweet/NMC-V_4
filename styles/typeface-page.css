@@ -13,123 +13,6 @@ html{
   }
 }
 
-/* main.site-wrapper{
-
-  position: relative;
-} */
-main.index-open{
-  opacity:0.3;
-}
-a.index-menu-link{
-  cursor: pointer;
-}
-div.index-menu{
-  padding: 10px 30px 40px 30px;
-  /* height: 100vh; */
-  overflow:scroll;
-  width:100vw;
-  background-color:#0c0c0c;
-  color:white;
-  font-size:3vw;
-  position: fixed;
-  top:0;
-  left:0;
-  z-index: 10;
-  display:flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  display:flex;
-  transform: translateY(-100%);
-  transition:all 0.5s cubic-bezier(0.75, -0.09, 0.3, 1.1);
-  -webkit-box-shadow: 0px 10px 60px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 10px 60px 0px rgba(0,0,0,1);
-  box-shadow: 0px 10px 60px 0px rgba(0,0,0,1);
-  opacity:0;
-}
-div.index-menu.open{
-  /* display: flex; */
-  transform: translateY(0%);
-  opacity: 1;
-}
-a.close-link{
-  cursor:pointer;
-  font-size: 24px;
-}
-p.index-menu-header{
-  font-size: 24px;
-}
-div.index-menu-top{
-  width:100%;
-  font-size: 22px;
-  display:flex;
-  justify-content: space-between;
-  margin-bottom:60px;
-}
-div.index-menu-left{
-  width:45%;
-}
-div.index-menu-right{
-  text-align:right;
-  width:45%;
-}
-div.index-link-container{
-  overflow:hidden;
-  margin-bottom:30px;
-  border-top: 1px solid gray;
-}
-div.index-link-container-right{
-  overflow:hidden;
-  margin-bottom:30px;
-  border-top: 1px solid gray;
-}
-a.index-link{
-  display:none;
-  transform: translateY(100%) skew(45deg);
-  opacity: 0;
-  animation: slideUp .8s cubic-bezier(0, 0.63, 0.1, 0.99) forwards;
-}
-a.index-link.open{
-  display:block;
-}
-div.index-link-container:nth-child(1) a{
-  animation-delay: 0.4s;
-}
-div.index-link-container:nth-child(2) a{
-  animation-delay: 0.45s;
-}
-div.index-link-container:nth-child(3) a{
-  animation-delay: 0.5s;
-}
-div.index-link-container:nth-child(4) a{
-  animation-delay: 0.55s;
-}
-div.index-link-container-right:nth-child(1) a{
-  animation-delay: 0.6s;
-}
-div.index-link-container-right:nth-child(2) a{
-  animation-delay: 0.65s;
-}
-div.index-link-container-right:nth-child(3) a{
-  animation-delay: 0.7s;
-}
-div.index-link-container-right:nth-child(4) a{
-  animation-delay: 0.75s;
-}
-div.hover-img{
-  position:fixed;
-  width:500px;
-  height:500px;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  z-index: -2;
-  opacity:0;
-}
-div.hover-img img{
-  max-width: 100%;
-}
-
 a.mm-site-title{
   font-size:18px;
   position: fixed;
@@ -138,33 +21,47 @@ a.mm-site-title{
   font-variation-settings: 'wght' 700;
   z-index: 6;
 }
-a.mobile-menu-link{
-  font-size:18px;
+a.menu-link{
+  font-size:24px;
   position: fixed;
   top:12px;
   right:32px;
   z-index: 6;
+  cursor:pointer;
 }
-div.mobile-menu{
+div.menu{
   position:fixed;
   top:0;
   left:0;
   z-index: 5;
-  height:100vh;
+  height:60vh;
   width:100vw;
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   padding:20px 32px;
   padding-top: 100px;
-  display: none;
+  transform: translateY(-100%);
+  opacity:0;
   overflow-x: scroll;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.75);
 }
-div.mobile-menu.open{
-  display:block;
+div.menu.open{
+  opacity:1;
+  transform: translateY(0);
+}
+div.sections-links.menu-open{
+  display:none;
+}
+div.mm-links{
+  display:flex;
 }
 div.mm-links a{
   display:block;
   margin-bottom:20px;
-  font-size:18px;
+  font-size:44px;
+  margin-right:60px;
 }
 p.mm-fonts-title{
   left:32px;
@@ -182,8 +79,8 @@ div.mm-font{
   display: inline-block;
 }
 div.mm-font-inner{
-  height:220px;
-  width:220px;
+  height:350px;
+  width:350px;
   margin-right: 40px;
   font-size: 128px;
   display:flex;
@@ -196,25 +93,6 @@ div.mm-font-inner.active{
   background-color:rgba(255, 255, 255, 0.76);
   color:black;
 }
-/* 
-div.mobile-menu a{
-  display:block;
-  margin-bottom: 10px;
-}
-div.mobile-tf-options{
-  font-size: 44px;
-  margin-bottom: 44px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--mid-gray-1);
-}
-div.mobile-tf-index a{
-  font-size: 24px;
-  color: var(--mid-gray-1);
-  margin-bottom: 15px;
-}
-div.mobile-menu a.mobile-menu-active{
-  color:white;
-} */
 
 
 
@@ -254,6 +132,9 @@ div.tf-header-left p{
 div.tf-header-left a{
     opacity: 0.3;
 }
+img.small-arrow{
+  max-height: 15px;
+}
 div.tf-header-left a.home{
   opacity: 1;
   margin-right:5px;
@@ -288,6 +169,9 @@ div.tf-header-right-mobile{
 
 main{
     background-color: black;
+}
+main.menu-open{
+  opacity:0.15;
 }
 section.tf-intro{
     padding:var(--padding);

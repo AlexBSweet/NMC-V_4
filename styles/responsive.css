@@ -1,4 +1,19 @@
+@media(max-width:1400px){
+    section.index-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.index-container{
+        width:50vw;
+        height:50vw;
+    }
+}
 @media(max-width:1200px){
+    div.aa{
+        font-size:15vw;
+    }
+    section.index-intro{
+        width:70vw;
+    }
     div.header-bg{
         height:65px;
     }
@@ -7,6 +22,9 @@
     }
     div.tf-header-left, div.tf-header-right{
         font-size: 18px;
+    }
+    a.menu-link{
+        font-size:18px;
     }
     img.bw-icon{
         max-width: 30px;
@@ -19,6 +37,9 @@
 
 
 @media(max-width:1000px){
+    div.mm-links a{
+        font-size:36px;
+    }
     div.tf-intro-inner{
         display: block;
     }
@@ -38,6 +59,16 @@
 
 
 @media(max-width:900px){
+        div.aa{
+            font-size:35vw;
+        }
+        section.index-content{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        div.index-container{
+            width:100vw;
+            height:70vw;
+        }
         div.option.change-text{
             display:none;
         }
@@ -56,18 +87,21 @@
         }
 }
 
-@media(min-width:800px){
-    div.mobile-menu{
-        display:none;
-    }
-    a.mobile-menu-link{
-        display:none;
-    }
-    a.mm-site-title{
-        display:none;
-    }
-}
+
 @media(max-width:800px){
+    div.mm-links{
+        display:block;
+    }
+      div.mm-links a{
+        font-size:18px;
+    }
+    div.menu{
+        height:100vh;
+    }
+    div.mm-font-inner{
+        height:220px;
+        width:220px;
+    }
     .small-type{
         font-size: 12px;
     }
@@ -91,11 +125,8 @@
         width:90vw;
         font-size:7vw;
     }
-    div.tf-header-left{
+    div.section-links{
         display: none;
-    }
-    div.tf-header-right{
-        display:none;
     }
     div.tf-header-right-mobile{
         display: block;
@@ -105,16 +136,23 @@
       }
 }
 
+@media(max-width:700px){
+    div.index-container{
+        width:100vw;
+        height:100vw;
+    }
+}
 
 @media(max-width:600px){
-   /* :root{
-       --padding: 10px 10px;
-   } */
+    section.index-intro{
+        width:85vw;
+        font-size:30px;
+    }
    div.tf-header-left span{
        opacity: 0.5;
    }
     div.tf-intro-right{
-        width:80vw;
+        display:none;
     }
     div.tf-intro-inner p{
         font-size:12px;

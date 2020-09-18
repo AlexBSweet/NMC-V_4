@@ -1,35 +1,56 @@
 // INDEX SECTION =================================
-const indexLink = document.querySelector('a.index-menu-link')
-const closeLink = document.querySelector('.close-link')
-const homeLink = document.querySelector('.home-icon')
-const indexMenu = document.querySelector('div.index-menu')
-const mainTag = document.querySelector('main')
-const bodyTag = document.querySelector('body')
-const indexMenuLinks = document.querySelectorAll('a.index-link')
-const one = document.querySelector('a.one')
-const two = document.querySelector('a.two')
-const three = document.querySelector('a.three')
-const four = document.querySelector('a.four')
-const five = document.querySelector('a.five')
-const six = document.querySelector('a.six')
-const seven = document.querySelector('a.seven')
-const eight = document.querySelector('a.eight')
+// const indexLink = document.querySelector('a.index-menu-link')
+// const closeLink = document.querySelector('.close-link')
+// const homeLink = document.querySelector('.home-icon')
+// const indexMenu = document.querySelector('div.index-menu')
 
-indexLink.addEventListener('click', ()=>{
-  indexMenu.classList.add('open')
-  mainTag.classList.add('index-open')
-  indexMenuLinks.forEach(link=>{
-    link.classList.add('open')
-  })
-})
-closeLink.addEventListener('click', ()=>{
-  indexMenu.classList.remove('open')
-  mainTag.classList.remove('index-open')
-  setTimeout(function(){ 
-    indexMenuLinks.forEach(link=>{
-      link.classList.remove('open')
-    })
-  }, 500)
+// const bodyTag = document.querySelector('body')
+// const indexMenuLinks = document.querySelectorAll('a.index-link')
+// const one = document.querySelector('a.one')
+// const two = document.querySelector('a.two')
+// const three = document.querySelector('a.three')
+// const four = document.querySelector('a.four')
+// const five = document.querySelector('a.five')
+// const six = document.querySelector('a.six')
+// const seven = document.querySelector('a.seven')
+// const eight = document.querySelector('a.eight')
+
+// indexLink.addEventListener('click', ()=>{
+//   indexMenu.classList.add('open')
+//   mainTag.classList.add('index-open')
+//   indexMenuLinks.forEach(link=>{
+//     link.classList.add('open')
+//   })
+// })
+// closeLink.addEventListener('click', ()=>{
+//   indexMenu.classList.remove('open')
+//   mainTag.classList.remove('index-open')
+//   setTimeout(function(){ 
+//     indexMenuLinks.forEach(link=>{
+//       link.classList.remove('open')
+//     })
+//   }, 500)
+// })
+const bwIcon = document.querySelector('.bw-icon')
+const sectionLinks = document.querySelector('div.sections-links')
+const mainTag = document.querySelector('main')
+const menu = document.querySelector('div.menu')
+const menuLink = document.querySelector('.menu-link')
+
+menuLink.addEventListener('click', ()=>{
+    menu.classList.toggle('open')
+    if(menu.classList.contains('open')){
+      mainTag.classList.add('menu-open')
+      sectionLinks.classList.add('menu-open')
+      menuLink.innerHTML = 'Close'
+      bwIcon.style.opacity = 0
+    } else{
+      mainTag.classList.remove('menu-open')
+      sectionLinks.classList.remove('menu-open')
+      menuLink.innerHTML = 'Menu'
+      bwIcon.style.opacity = 1
+    }
+   
 })
 
 
@@ -71,7 +92,7 @@ const observer = new IntersectionObserver(
         infoLink.classList.remove('current-section')
         stylesLink.classList.remove('current-section')
         glyphsLink.classList.remove('current-section')
-        downloadLink.classList.remove('current-section')
+        // downloadLink.classList.remove('current-section')
  
 
         // testerLink.classList.remove('current-section')
@@ -82,7 +103,7 @@ const observer = new IntersectionObserver(
         infoLink.classList.remove('current-section')
         stylesLink.classList.remove('current-section')
         testerLink.classList.remove('current-section')
-        downloadLink.classList.remove('current-section')
+        // downloadLink.classList.remove('current-section')
         // testerLink.classList.add('current-section')
         // glyphsLink.classList.remove('current-section')
         // samplesLink.classList.remove('current-section')
@@ -95,7 +116,7 @@ const observer = new IntersectionObserver(
         infoLink.classList.remove('current-section')
         stylesLink.classList.remove('current-section')
         glyphsLink.classList.remove('current-section')
-        downloadLink.classList.remove('current-section')
+        // downloadLink.classList.remove('current-section')
         // infoLink.classList.add('current-section')
         // glyphsLink.classList.remove('current-section')
         // samplesLink.classList.remove('current-section')
@@ -104,7 +125,7 @@ const observer = new IntersectionObserver(
         // buyLink.classList.remove('current-section')
       }
       else if(entry.intersectionRatio >= 0.1 && entry.target.classList.contains('tf-download')) {
-        downloadLink.classList.add('current-section')
+        // downloadLink.classList.add('current-section')
         testerLink.classList.remove('current-section')
         samplesLink.classList.remove('current-section')
         infoLink.classList.remove('current-section')
@@ -541,7 +562,7 @@ tObserver.observe(testerText)
 
 
 
-const bwIcon = document.querySelector('.bw-icon')
+
 
   bwIcon.addEventListener('click', ()=>{
     stylesSection.classList.toggle('color-toggle-on')
