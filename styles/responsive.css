@@ -87,8 +87,15 @@
         }
 }
 
-
+@media(min-width:800px){
+    a.index-menu-link{
+        display:none;
+    }
+}
 @media(max-width:800px){
+    a.header-index{
+        display:none;
+    }
     div.mm-links{
         display:block;
     }
@@ -145,8 +152,9 @@
 
 @media(max-width:600px){
     section.index-intro{
-        width:85vw;
-        font-size:30px;
+        width:95vw;
+        font-size:28px;
+        margin-top:20vh;
     }
    div.tf-header-left span{
        opacity: 0.5;
