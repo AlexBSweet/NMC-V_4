@@ -1,36 +1,4 @@
-// INDEX SECTION =================================
-// const indexLink = document.querySelector('a.index-menu-link')
-// const closeLink = document.querySelector('.close-link')
-// const homeLink = document.querySelector('.home-icon')
-// const indexMenu = document.querySelector('div.index-menu')
 
-// const bodyTag = document.querySelector('body')
-// const indexMenuLinks = document.querySelectorAll('a.index-link')
-// const one = document.querySelector('a.one')
-// const two = document.querySelector('a.two')
-// const three = document.querySelector('a.three')
-// const four = document.querySelector('a.four')
-// const five = document.querySelector('a.five')
-// const six = document.querySelector('a.six')
-// const seven = document.querySelector('a.seven')
-// const eight = document.querySelector('a.eight')
-
-// indexLink.addEventListener('click', ()=>{
-//   indexMenu.classList.add('open')
-//   mainTag.classList.add('index-open')
-//   indexMenuLinks.forEach(link=>{
-//     link.classList.add('open')
-//   })
-// })
-// closeLink.addEventListener('click', ()=>{
-//   indexMenu.classList.remove('open')
-//   mainTag.classList.remove('index-open')
-//   setTimeout(function(){ 
-//     indexMenuLinks.forEach(link=>{
-//       link.classList.remove('open')
-//     })
-//   }, 500)
-// })
 const bwIcon = document.querySelector('.bw-icon')
 const sectionLinks = document.querySelector('div.sections-links')
 const mainTag = document.querySelector('main')
