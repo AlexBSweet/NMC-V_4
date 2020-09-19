@@ -244,12 +244,19 @@ h1.tf-page-title{
     line-height: 1;
 }
 
+
+
+
 h1.mobile-section-header{
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  background-color:lightgrey;
+  color:black;
 }
 .padding{
   padding: var(--padding);
 }
+
+
 
 
 section.tf-styles{
