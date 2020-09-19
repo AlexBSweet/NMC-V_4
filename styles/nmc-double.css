@@ -8,7 +8,7 @@ section.tf-intro{
     color: rgb(54, 164, 238);
 }
 div.tf-intro-inner{
-    top: 44vh;
+   bottom: 10vh;
 }
 h1.tf-page-title{
     font-size: 14vw;

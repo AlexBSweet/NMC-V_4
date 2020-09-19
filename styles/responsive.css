@@ -162,6 +162,9 @@
     div.tf-intro-left{
         width:90vw;
     }
+    span.span-space{
+        margin-right: 20px;
+    }
     section.tf-styles{
         padding-top:30px;
     }
@@ -250,11 +253,14 @@
     div.tf-intro-right{
         display:none;
     }
+    span.span-space{
+        margin-right: 12px;
+    }
     h1.tf-page-title.red-page-title{
         display: block;
     }
     div.tf-intro-inner{
-        bottom:10vh;
+        bottom:11vh;
     }
     div.tf-intro-inner p{
         font-size:12px;

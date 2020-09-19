@@ -5,7 +5,7 @@ section.tf-intro{
     background-color: rgb(235, 160, 62);
 }
 div.tf-intro-inner{
-    top: 48vh;
+    bottom: 14vh;
 }
 h1.tf-page-title{
     font-size: 12vw;
