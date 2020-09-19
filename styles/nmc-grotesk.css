@@ -20,12 +20,14 @@ div.tf-intro-left{
 
 
 
-/* @keyframes up {
+@keyframes up {
     0%{
-        transform: translateY(100%) skew(-10deg, -10deg);
+        transform: translateY(100%) skew(-25deg, -25deg);
+        color:black;
     }
     100%{
         transform: translateY(0%) skew(0deg, 0deg);
+        color:white;
     }
 }
 h1.tf-page-title{
@@ -34,7 +36,7 @@ h1.tf-page-title{
 h1.tf-page-title span{
     display: inline-block;
     transform: translateY(100%);
-    animation: up 0.5s 0.3s ease forwards;
+    animation: up 1.2s 0.3s cubic-bezier(0, 0.72, 0.25, 1) forwards;
 }
 h1.tf-page-title-top span:nth-child(1){
     animation-delay: 0.3s;
@@ -71,8 +73,16 @@ h1.tf-page-title-bottom span:nth-child(6){
 
 h1.tf-page-title-bottom span:nth-child(7){
     animation-delay: 0.75s;
-} */
+}
 
+
+div.tf-intro-right-inner div{
+    overflow: hidden;
+}
+div.tf-intro-right-inner div p{ 
+    transform: translateY(120%);
+    animation: up 1.2s 0.3s cubic-bezier(0, 0.72, 0.25, 1) forwards;
+}
 
 
 

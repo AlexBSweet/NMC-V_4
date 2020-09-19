@@ -144,14 +144,12 @@ h1.mobile-section-header{
   color:white;
   font-size: 16px;
 }
-h1.mobile-section-header.header-adjust{
-  position: relative;
-  top:-40px;
-}
 .padding{
   padding: var(--padding);
 }
-
+.header-adjust{
+  padding-top:25px;
+}
 
 
 

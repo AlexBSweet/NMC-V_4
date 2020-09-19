@@ -33,6 +33,12 @@
     div.tf-header-left, div.tf-header-right{
         font-size: 18px;
     }
+    .select-css{
+        font-size:18px;
+    }
+    div.option label{
+        font-size:18px;
+    }
     a.menu-link{
         font-size:18px;
     }
@@ -154,7 +160,7 @@
         opacity:1;
     }
     section.tf-styles{
-        padding-top:0px;
+        padding-top:30px;
     }
     section.mobile-alphabet{
         display:block;
