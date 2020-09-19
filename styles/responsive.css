@@ -250,6 +250,9 @@
     div.tf-intro-right{
         display:none;
     }
+    div.tf-intro-inner{
+        bottom:14vh;
+    }
     div.tf-intro-inner p{
         font-size:12px;
     }
