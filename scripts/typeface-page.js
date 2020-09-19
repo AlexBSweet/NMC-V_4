@@ -1,35 +1,4 @@
 
-const bwIcon = document.querySelector('.bw-icon')
-const sectionLinks = document.querySelector('div.sections-links')
-const mainTag = document.querySelector('main')
-const menu = document.querySelector('div.menu')
-const menuLink = document.querySelector('.menu-link')
-const fontInner = document.querySelectorAll('.mm-font-inner')
-
-menuLink.addEventListener('click', ()=>{
-    menu.classList.toggle('open')
-    if(menu.classList.contains('open')){
-      mainTag.classList.add('menu-open')
-      sectionLinks.classList.add('menu-open')
-      menuLink.innerHTML = 'Close'
-      bwIcon.style.opacity = 0
-
-      fontInner.forEach(container=>{
-        container.classList.add('animate')
-      })
-
-    } else{
-      mainTag.classList.remove('menu-open')
-      sectionLinks.classList.remove('menu-open')
-      menuLink.innerHTML = 'Menu'
-      bwIcon.style.opacity = 1
-
-      fontInner.forEach(container=>{
-        container.classList.remove('animate')
-      })
-    }
-   
-})
 
 
 
@@ -161,12 +130,24 @@ const introOpacity = ()=>{
 })
 }
 
+const introOpacityMobile = ()=>{
+  window.addEventListener('scroll', ()=>{
+    pixels = window.pageYOffset
+
+    if(pixels>window.innerHeight){
+        headerBg.style.opacity = 1
+    } else{
+        headerBg.style.opacity = 0
+    }
+})
+}
+
 var mq = window.matchMedia( "(min-width: 800px)" );
 if (mq.matches) {
    introOpacity()
 }
 else {
-    // window width is greater than 570px
+    introOpacityMobile()
 }
 
 
@@ -550,25 +531,23 @@ tObserver.observe(testerText)
 
 
 
-
   bwIcon.addEventListener('click', ()=>{
     stylesSection.classList.toggle('color-toggle-on')
     samplesSection.classList.toggle('color-toggle-on')
     bodyTag.classList.toggle('color-toggle-on')
     glyphsSection.classList.toggle('color-toggle-on')
     testerSection.classList.toggle('color-toggle-on')
-    indexMenu.classList.toggle('color-toggle-on')
     testerOptions.classList.toggle('color-toggle-on')
+    menu.classList.toggle('color-toggle-on')
     
     if(stylesSection.classList.contains('color-toggle-on')){
-        homeLink.src = 'assets/home-black.svg'
+
         bwIcon.src = "assets/B-W-black.png"
         headerBg.style.backgroundColor = "white"
         anchorTags.forEach(tag=>{
             tag.style.color = 'black'
         })
     } else{
-        homeLink.src = 'assets/home-white.svg'
         bwIcon.src = "assets/B-W-white.svg"
         headerBg.style.backgroundColor = "black"
         anchorTags.forEach(tag=>{
@@ -576,3 +555,4 @@ tObserver.observe(testerText)
         })
     }
 })
+

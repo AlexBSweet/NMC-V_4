@@ -67,6 +67,129 @@ div.header-bg{
     height:60px;
 }
 
+
+
+a.mm-site-title{
+    font-size:18px;
+    position: fixed;
+    top:2vh;
+    left:32px;
+    font-variation-settings: 'wght' 700;
+    z-index: 6;
+  }
+  a.menu-link{
+    font-size:24px;
+    position: fixed;
+    top:12px;
+    right:32px;
+    z-index: 6;
+    cursor:pointer;
+  }
+  div.menu{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 5;
+    height:60vh;
+    width:100vw;
+    background-color: rgb(14, 14, 14);
+    padding:20px 32px;
+    padding-top: 100px;
+    transform: translateY(-100%);
+    opacity:0;
+    overflow-x: scroll;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.75);
+  }
+  div.menu.open{
+    opacity:1;
+    transform: translateY(0);
+  }
+  div.sections-links.menu-open{
+    display:none;
+  }
+  div.mm-links{
+    display:flex;
+  }
+  div.mm-links a{
+    display:block;
+    margin-bottom:20px;
+    font-size:44px;
+    margin-right:60px;
+  }
+  p.mm-fonts-title{
+    left:32px;
+    /* border-bottom: 1px solid; */
+    color:gray;
+    margin-top:32px;
+  }
+  div.mm-fonts-container{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 22px 0px;
+    white-space: nowrap;
+  }
+  @keyframes riseUp {
+    0%{
+      transform: skew(2deg, 2deg) translateX(50%);
+      opacity: 0;
+      border-radius: 50%;
+    }
+    100%{
+      transform: skew(0deg, 0deg) translateX(0);
+      opacity:1;
+      border-radius: 0%;
+    }
+    
+  }
+  div.mm-font{
+    display: inline-block;
+    overflow:hidden;
+  }
+  div.mm-font-inner{
+    height:350px;
+    width:350px;
+    margin-right: 40px;
+    font-size: 128px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid gray;
+    margin-bottom:10px;
+    transform: skew(10deg, 10deg) translateX(50%);
+    opacity: 0;
+  }
+  div.mm-font-inner.animate{
+    animation: riseUp .9s .3s cubic-bezier(0.77, 0.01, 0.06, 1.01) forwards;
+  }
+  div.mm-fi-two.animate{
+    animation-delay: .35s;
+  }
+  div.mm-fi-three.animate{
+    animation-delay: .4s;
+  }
+  div.mm-fi-four.animate{
+    animation-delay: .45s;
+  }
+  div.mm-fi-five.animate{
+    animation-delay: .5s;
+  }
+  div.mm-font-inner.active{
+    background-color:rgba(255, 255, 255, 0.76);
+    color:black;
+  }
+  
+  
+
+
+
+
+
+
+
+
 section.index-intro{
     /* height:60vh; */
     position: sticky;
@@ -150,7 +273,7 @@ div.aa{
 
 
 footer{
-    background-color:var(--bg-color);
+    /* background-color:var(--bg-color); */
     padding: var(--padding);
     padding-top:150px;
     padding-bottom: 60px;
@@ -165,6 +288,7 @@ div.divider{
     height:1px;
     background-color:var(--mid-gray-1);
     margin-bottom:15px;
+    display: none;
 }
 div.footer-links p{
     margin-bottom: 20px;
@@ -188,4 +312,70 @@ p.top-link{
     align-items: center;
     justify-content: center;
     display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* INFO SECTION STYLES ======================================================== */
+section.info-page-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:44px;
+    padding: var(--padding);
+    margin-top:100px;
+    min-height:70vh;
+}
+div.info-inner{
+    /* background-color: blue; */
+    font-size:24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    width:100%;
+    font-variation-settings: 'wght' 200, 'slnt' 0;
+    color:#cacaca;
+}
+div.info-inner h1{
+    font-size: 44px;
+    width:70%;
+    margin-bottom: 24px;
+}
+div.info-left{
+    grid-column: 1/2;
+}
+div.info-middle{
+    grid-column: 2/3;
+}
+div.info-right{
+    grid-column: 3/4;
+}
+div.info-right div{
+    border-top:1px solid;
+    padding-top:5px;
+    margin-bottom:25px;
+}
+div.info-right div.services{
+    margin-bottom:80px;
+}
+.info-one span{
+    position:relative;
+    z-index: 2;
+}
+.info-one span:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 28%;
+    width: 100%;
+    background-color: #3a5c41;
+    z-index: -1;
 }
