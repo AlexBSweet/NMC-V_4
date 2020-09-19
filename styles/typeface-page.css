@@ -307,6 +307,7 @@ section.mobile-alphabet{
   padding: var(--padding);
   display:none;
   margin-bottom:80px;
+  padding-top:30px;
 }
 section.mobile-alphabet h1{
   font-size: 16vw;

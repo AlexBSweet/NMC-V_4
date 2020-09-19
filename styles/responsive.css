@@ -101,7 +101,13 @@
 
 
 @media(max-width:800px){
-
+    section.intro{
+        position:relative;
+        opacity:1;
+    }
+    section.tf-styles{
+        padding-top:40px;
+    }
     section.mobile-alphabet{
         display:block;
     }
@@ -146,6 +152,9 @@
     div.tf-styles-right{
         width:90vw;
         font-size:7vw;
+    }
+    section.tf-samples{
+        padding-top:0px;
     }
     div.section-links{
         display: none;
