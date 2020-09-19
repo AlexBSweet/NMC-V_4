@@ -23,11 +23,11 @@ div.tf-intro-left{
 @keyframes up {
     0%{
         transform: translateY(100%) skew(-25deg, -25deg);
-        color:black;
+        opacity: 0;
     }
     100%{
         transform: translateY(0%) skew(0deg, 0deg);
-        color:white;
+        opacity: 1;
     }
 }
 h1.tf-page-title{
