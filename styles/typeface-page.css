@@ -244,9 +244,12 @@ h1.tf-page-title{
     line-height: 1;
 }
 
-
-
-
+h1.mobile-section-header{
+  margin-bottom: 30px;
+}
+.padding{
+  padding: var(--padding);
+}
 
 
 section.tf-styles{
@@ -296,6 +299,7 @@ div.style p:nth-child(1){
 section.mobile-alphabet{
   padding: var(--padding);
   display:none;
+  margin-bottom:80px;
 }
 section.mobile-alphabet h1{
   font-size: 16vw;
