@@ -2,17 +2,16 @@ html{
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-@keyframes slideUp{
+@keyframes up {
   0%{
-    transform: translateY(100%) skew(45deg);
-    opacity:0;
+      transform: translateY(100%) skew(-25deg, -25deg);
+      opacity: 0;
   }
   100%{
-    transform: translateY(0%) skew(0);
-    opacity: 1;
+      transform: translateY(0%) skew(0deg, 0deg);
+      opacity: 1;
   }
 }
-
 
 
 div.header-bg{
@@ -133,8 +132,11 @@ div.tf-intro-left{
 h1.tf-page-title{
     font-size: 9vw;
     line-height: 1;
+    /* display:inline-block; */
 }
-
+.span-space{
+  margin-right:60px;
+}
 
 
 

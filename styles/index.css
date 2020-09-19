@@ -90,7 +90,7 @@ a.mm-site-title{
     top:0;
     left:0;
     z-index: 5;
-    height:60vh;
+    max-height:60vh;
     width:100vw;
     background-color: rgb(14, 14, 14);
     padding:20px 32px;

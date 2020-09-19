@@ -250,6 +250,9 @@
     div.tf-intro-right{
         display:none;
     }
+    h1.tf-page-title.red-page-title{
+        display: block;
+    }
     div.tf-intro-inner{
         bottom:14vh;
     }
