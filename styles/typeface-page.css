@@ -75,8 +75,20 @@ div.mm-fonts-container{
   padding: 22px 0px;
   white-space: nowrap;
 }
+@keyframes riseUp {
+  0%{
+    transform: skew(2deg, 2deg) translateX(50%);
+    opacity: 0;
+  }
+  100%{
+    transform: skew(0deg, 0deg) translateX(0);
+    opacity:1;
+  }
+  
+}
 div.mm-font{
   display: inline-block;
+  overflow:hidden;
 }
 div.mm-font-inner{
   height:350px;
@@ -88,6 +100,20 @@ div.mm-font-inner{
   justify-content: center;
   border:1px solid gray;
   margin-bottom:10px;
+  transform: skew(10deg, 10deg) translateX(50%);
+  opacity: 0;
+}
+div.mm-font-inner.animate{
+  animation: riseUp .9s .3s cubic-bezier(0.77, 0.01, 0.06, 1.01) forwards;
+}
+div.mm-fi-two.animate{
+  animation-delay: .35s;
+}
+div.mm-fi-three.animate{
+  animation-delay: .4s;
+}
+div.mm-fi-four.animate{
+  animation-delay: .45s;
 }
 div.mm-font-inner.active{
   background-color:rgba(255, 255, 255, 0.76);
@@ -261,6 +287,21 @@ div.style p:nth-child(1){
         display:block;
     }
 } */
+
+
+
+
+
+
+section.mobile-alphabet{
+  padding: var(--padding);
+  display:none;
+}
+section.mobile-alphabet h1{
+  font-size: 16vw;
+  white-space: normal;
+  word-break: break-all;
+}
 
 
 

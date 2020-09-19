@@ -17,6 +17,69 @@ div.tf-intro-left{
 }
 
 
+
+
+
+/* @keyframes up {
+    0%{
+        transform: translateY(100%) skew(-10deg, -10deg);
+    }
+    100%{
+        transform: translateY(0%) skew(0deg, 0deg);
+    }
+}
+h1.tf-page-title{
+    overflow:hidden;
+}
+h1.tf-page-title span{
+    display: inline-block;
+    transform: translateY(100%);
+    animation: up 0.5s 0.3s ease forwards;
+}
+h1.tf-page-title-top span:nth-child(1){
+    animation-delay: 0.3s;
+}
+h1.tf-page-title-top span:nth-child(2){
+    animation-delay: 0.35s;
+}
+h1.tf-page-title-top span:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+h1.tf-page-title-bottom span:nth-child(1){
+    animation-delay: 0.45s;
+}
+h1.tf-page-title-bottom span:nth-child(2){
+    animation-delay: 0.5s;
+}
+
+h1.tf-page-title-bottom span:nth-child(3){
+    animation-delay: 0.55s;
+}
+
+h1.tf-page-title-bottom span:nth-child(4){
+    animation-delay: 0.6s;
+}
+
+h1.tf-page-title-bottom span:nth-child(5){
+    animation-delay: 0.65s;
+}
+
+h1.tf-page-title-bottom span:nth-child(6){
+    animation-delay: 0.7s;
+}
+
+h1.tf-page-title-bottom span:nth-child(7){
+    animation-delay: 0.75s;
+} */
+
+
+
+
+
+
+
+
 p.sample-text{
     font-size: 12vw;
     margin:-70px 0 0px 0;

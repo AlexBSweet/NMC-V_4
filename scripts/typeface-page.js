@@ -4,6 +4,7 @@ const sectionLinks = document.querySelector('div.sections-links')
 const mainTag = document.querySelector('main')
 const menu = document.querySelector('div.menu')
 const menuLink = document.querySelector('.menu-link')
+const fontInner = document.querySelectorAll('.mm-font-inner')
 
 menuLink.addEventListener('click', ()=>{
     menu.classList.toggle('open')
@@ -12,11 +13,20 @@ menuLink.addEventListener('click', ()=>{
       sectionLinks.classList.add('menu-open')
       menuLink.innerHTML = 'Close'
       bwIcon.style.opacity = 0
+
+      fontInner.forEach(container=>{
+        container.classList.add('animate')
+      })
+
     } else{
       mainTag.classList.remove('menu-open')
       sectionLinks.classList.remove('menu-open')
       menuLink.innerHTML = 'Menu'
       bwIcon.style.opacity = 1
+
+      fontInner.forEach(container=>{
+        container.classList.remove('animate')
+      })
     }
    
 })
@@ -41,7 +51,7 @@ const observer = new IntersectionObserver(
         stylesLink.classList.remove('current-section')
         samplesLink.classList.remove('current-section')
         glyphsLink.classList.remove('current-section')
-        downloadLink.classList.remove('current-section')
+        // downloadLink.classList.remove('current-section')
         // samplesLink.classList.remove('current-section')
         // glyphsLink.classList.remove('current-section')
       } else if(entry.intersectionRatio >= 1 && entry.target.classList.contains('tf-styles')) {
@@ -50,7 +60,7 @@ const observer = new IntersectionObserver(
         infoLink.classList.remove('current-section')
         samplesLink.classList.remove('current-section')
         glyphsLink.classList.remove('current-section')
-        downloadLink.classList.remove('current-section')
+        // downloadLink.classList.remove('current-section')
         // samplesLink.classList.add('current-section')
         // stylesLink.classList.remove('current-section')
 
