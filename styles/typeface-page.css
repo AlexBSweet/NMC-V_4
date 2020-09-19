@@ -252,6 +252,10 @@ h1.mobile-section-header{
   background-color:lightgrey;
   color:black;
 }
+h1.mobile-section-header.header-adjust{
+  position: relative;
+  top:-40px;
+}
 .padding{
   padding: var(--padding);
 }

@@ -101,12 +101,18 @@
 
 
 @media(max-width:800px){
+    .section-start{
+        display:none;
+    }
+    div.header-bg{
+        opacity: 1;
+    }
     section.tf-intro{
         position:relative;
         opacity:1;
     }
     section.tf-styles{
-        padding-top:40px;
+        padding-top:0px;
     }
     section.mobile-alphabet{
         display:block;
