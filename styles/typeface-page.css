@@ -140,8 +140,9 @@ h1.tf-page-title{
 
 h1.mobile-section-header{
   /* margin-bottom: 30px; */
-  background-color:lightgrey;
-  color:black;
+  background-color:rgb(0, 0, 0);
+  color:white;
+  font-size: 16px;
 }
 h1.mobile-section-header.header-adjust{
   position: relative;
