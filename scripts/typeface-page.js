@@ -146,7 +146,8 @@ if(pixels>window.innerHeight){
     headerBg.style.opacity = 0
 }
 
-window.addEventListener('scroll', ()=>{
+const introOpacity = ()=>{
+  window.addEventListener('scroll', ()=>{
     pixels = window.pageYOffset
     let pxDamp = pixels / 1000
 
@@ -157,11 +158,19 @@ window.addEventListener('scroll', ()=>{
     } else{
         headerBg.style.opacity = 0
     }
-
-
-   
-
 })
+}
+
+var mq = window.matchMedia( "(min-width: 800px)" );
+if (mq.matches) {
+   introOpacity()
+}
+else {
+    // window width is greater than 570px
+}
+
+
+
 
 
 

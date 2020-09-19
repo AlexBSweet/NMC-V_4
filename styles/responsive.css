@@ -101,7 +101,7 @@
 
 
 @media(max-width:800px){
-    section.intro{
+    section.tf-intro{
         position:relative;
         opacity:1;
     }
