@@ -438,7 +438,7 @@ div.option:nth-child(3){
 }
   section.tf-tester{
     width:100vw;
-    padding-top:50px;
+    padding-top:100px;
   }
   div.tester-content{
     /* height:120vh; */
@@ -513,8 +513,8 @@ div.option:nth-child(3){
     grid-gap: 44px;
     padding:var(--padding);
     color: #aaaaaa;
-    border-top:1px solid;
-    margin-top:300px;
+    /* border-top:1px solid; */
+    /* margin-top:300px; */
     margin-bottom: 430px;
     padding-top: 100px;
     max-width: 100%;
@@ -553,7 +553,7 @@ div.option:nth-child(3){
   div.download-detail{
     border-top: 1px solid;
     display:flex;
-    padding-top:5px;
+    padding-top:7px;
     margin-bottom: 20px;
   }
   div.download-detail.no-border{
@@ -561,6 +561,8 @@ div.option:nth-child(3){
   }
   div.dd-left{
     width:25%;
+    font-family: NMC Red Mono;
+    font-variation-settings: 'wght' 100, 'slnt' 0;
   }
   div.dd-right{
     max-width: 75%;

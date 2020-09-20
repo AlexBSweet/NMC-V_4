@@ -340,8 +340,8 @@ div.info-inner{
     line-height: 1.5;
     letter-spacing: 0.05em;
     width:100%;
-    font-variation-settings: 'wght' 200, 'slnt' 0;
-    color:#cacaca;
+    font-variation-settings: 'wght' 100, 'slnt' 0;
+    color:#aaaaaa;
 }
 div.info-inner h1{
     font-size: 44px;

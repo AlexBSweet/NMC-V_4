@@ -90,6 +90,10 @@
     }
     section.tf-download{
         display:block;
+        margin-bottom:0px;
+    }
+    section.tf-page-index{
+        margin-top:130px;
     }
     div.tf-download-left{
         width:100%;
@@ -101,6 +105,7 @@
           font-size:24px;
           margin-bottom:50px;
       }
+
 }
 
 
@@ -318,9 +323,20 @@
     div.download-detail{
         display:block;
         max-width: 100%;
+        padding-top:15px;
+    }
+    div.download-description{
+        font-size:20px;
+    }
+    div.tf-download-right{
+        margin-top: 60px;
     }
     section.tf-download h1{
         max-width: 90%;
+    }
+    div.dd-left{
+        margin-bottom: 16px;
+        width: 80%;
     }
     div.dd-right{
         max-width: 100%;
