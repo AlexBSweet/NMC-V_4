@@ -63,6 +63,9 @@
         grid-row:2;
         margin-top:150px;
     }
+      div.download-description{
+          font-size:24px;
+      }
 }
 
 
@@ -85,6 +88,19 @@
     div.option-label{
         font-size: 20px;
     }
+    section.tf-download{
+        display:block;
+    }
+    div.tf-download-left{
+        width:100%;
+    }
+    div.tf-download-right{
+        width:100%;
+    }
+      div.download-description{
+          font-size:24px;
+          margin-bottom:50px;
+      }
 }
 
 
@@ -131,6 +147,12 @@
         }
         div.info-right div.services{
             margin-bottom:25px;
+        }
+        section.tf-download{
+            margin-top:50px;
+        }
+        div.tf-download-right{
+            margin-top:100px;
         }
 }
 
@@ -292,6 +314,16 @@
     div.option label{
         font-size:16px;
         margin-top:0px;
+    }
+    div.download-detail{
+        display:block;
+        max-width: 100%;
+    }
+    section.tf-download h1{
+        max-width: 90%;
+    }
+    div.dd-right{
+        max-width: 100%;
     }
     footer{
         padding-top:40px;

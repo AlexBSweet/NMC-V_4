@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="83" viewBox="0 0 83 83">
+  <defs>
+    <clipPath id="clip-Download_Icon">
+      <rect width="83" height="83"/>
+    </clipPath>
+  </defs>
+  <g id="Download_Icon" data-name="Download Icon" clip-path="url(#clip-Download_Icon)">
+    <g id="description-24px" transform="translate(2 2)">
+      <path id="Path_97" data-name="Path 97" d="M0,0H79V79H0Z" fill="none"/>
+      <path id="Path_98" data-name="Path 98" d="M36.917,2H10.583a6.575,6.575,0,0,0-6.55,6.583L4,61.25a6.575,6.575,0,0,0,6.55,6.583H50.083a6.6,6.6,0,0,0,6.583-6.583V21.75ZM43.5,54.667H17.167V48.083H43.5Zm0-13.167H17.167V34.917H43.5ZM33.625,25.042V6.938l18.1,18.1Z" transform="translate(9.167 4.583)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
