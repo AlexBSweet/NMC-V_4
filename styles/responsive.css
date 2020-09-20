@@ -341,6 +341,9 @@
     div.dd-right{
         max-width: 100%;
     }
+    section.tf-page-index div.index-container{
+        background-color:rgba(128, 128, 128, 0.075);
+    }
     footer{
         padding-top:40px;
     }
