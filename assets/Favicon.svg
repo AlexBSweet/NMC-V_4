@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="97" viewBox="0 0 97 97">
+  <defs>
+    <clipPath id="clip-Favicon">
+      <rect width="97" height="97"/>
+    </clipPath>
+  </defs>
+  <g id="Favicon" clip-path="url(#clip-Favicon)">
+    <g id="Ellipse_28" data-name="Ellipse 28" transform="translate(1 1)" stroke="#000" stroke-width="1">
+      <circle cx="47.5" cy="47.5" r="47.5" stroke="none"/>
+      <circle cx="47.5" cy="47.5" r="47" fill="none"/>
+    </g>
+    <text id="N" transform="translate(32 64)" fill="#fff" font-size="45" font-family="Intro-Variablev2.0-BoldItalic, 'Intro - Variable v2.0'" font-weight="700" font-style="italic"><tspan x="0" y="0">N</tspan></text>
+  </g>
+</svg>
