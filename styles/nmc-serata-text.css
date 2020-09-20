@@ -89,7 +89,6 @@ div.sample{
     margin-bottom: 100px;
 }
 p.sample-text{
-    font-size: 12vw;
     margin:-70px 0 0px 0;
     overflow-x: hidden;
     line-height: 1.3;
@@ -98,21 +97,6 @@ p.sample-text{
     box-sizing: border-box;
   }
 
-div.sample-one p.sample-text{
-    font-size: 15vw;
-}
-div.sample-two p.sample-text{
-    font-size: 7vw;
-}
-div.sample-three p.sample-text{
-    font-size: 16vw;
-}
-div.sample-four p.sample-text{
-    font-size: 5vw;
-}
-div.sample-six p.sample-text{
-    font-size: 6vw;
-}
 
 
 div.active-glyph-container{
@@ -121,6 +105,42 @@ div.active-glyph-container{
 section.glyphs-category div{
     font-family: NMC Serata Text Regular;
 }
+
+div.baseline{
+    top:413px;
+  }
+  div.x-height{
+    top:238px;
+  }
+  div.cap-height{
+    top:151px;
+  }
+  div.ascender-height{
+    top:130px;
+  }
+
+  @media(max-width:1400px){
+    div.baseline{
+        top:277px;
+      }
+      div.x-height{
+        top:168px;
+      }
+      div.cap-height{
+        top:113px;
+      }
+      div.ascender-height{
+        top:101px;
+      }
+      p.micro{
+          font-size:10px;
+      }
+}
+
+
+
+
+
 
 
 h1.tester-text{

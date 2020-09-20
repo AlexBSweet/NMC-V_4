@@ -69,19 +69,7 @@ div.tf-intro-right-inner div p{
 
 
 
-div.sample{
-    /* border-top:1px solid var(--mid-gray-1); */
-    margin-bottom: 100px;
-}
-p.sample-text{
-    font-size: 12vw;
-    margin:-70px 0 0px 0;
-    overflow-x: hidden;
-    line-height: 1.3;
-    position:relative;
-    z-index: -1;
-    box-sizing: border-box;
-  }
+
   div.option:nth-child(3){
     grid-column: 3/5;
   }
@@ -91,21 +79,40 @@ p.sample-text{
   div.option:nth-child(5){
     grid-column: 11/13;
   }
-div.sample-one p.sample-text{
-    font-size: 15vw;
+
+
+
+
+
+
+div.baseline{
+    top:410px;
+  }
+  div.x-height{
+    top:209px;
+  }
+  div.cap-height{
+    top:129px;
+  }
+
+  @media(max-width:1400px){
+    div.baseline{
+        top:275px;
+      }
+      div.x-height{
+        top:149px;
+      }
+      div.cap-height{
+        top:99px;
+      }
+      p.micro{
+          font-size:10px;
+      }
 }
-div.sample-two p.sample-text{
-    font-size: 9.5vw;
-}
-div.sample-three p.sample-text{
-    font-size: 15vw;
-}
-div.sample-four p.sample-text{
-    font-size: 7.9vw;
-}
-div.sample-five p.sample-text{
-    font-size: 5.9vw;
-}
+
+
+
+
 
 
 h1.tester-text{

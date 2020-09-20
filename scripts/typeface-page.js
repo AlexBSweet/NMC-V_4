@@ -179,18 +179,16 @@ samples.forEach(sample=>{
       text.innerHTML = Abc[0]
     } else if(v=="Number"){
       text.innerHTML = Number[0]
+    } else if(v=="Pangram"){
+      text.innerHTML = Pangram[0]
     } else if(v=="Language"){
       text.innerHTML = Language[0]
     } else if(v=="Punctuation"){
       text.innerHTML = Punctuation[0]
     } else if(v=="Symbols"){
       text.innerHTML = Symbols[0]
-    } else if(v=="Title"){
-      text.innerHTML = Title[0]
-    } else if(v=="Sentence"){
-      text.innerHTML = Sentence[0]
-    } else if(v=="Paragraph"){
-      text.innerHTML = Paragraph[0]
+    } else if(v=="Body"){
+      text.innerHTML = Body[0]
     } else if(v=="Random"){
       text.innerHTML = Random[0]
     } else if(v=="Change Text"){
@@ -231,21 +229,16 @@ samples.forEach(sample=>{
         sampleCounter=Symbols.length -1 
       }
       text.innerHTML = Symbols[sampleCounter]
-    } else if(v=="Title"){
+    } else if(v=="Pangram"){
       if(sampleCounter<0){
-        sampleCounter=Title.length -1 
+        sampleCounter=Pangram.length -1 
       }
-      text.innerHTML = Title[sampleCounter]
-    } else if(v=="Sentence"){
+      text.innerHTML = Pangram[sampleCounter]
+    } else if(v=="Body"){
       if(sampleCounter<0){
-        sampleCounter=Sentence.length -1 
+        sampleCounter=Body.length -1 
       }
-      text.innerHTML = Sentence[sampleCounter]
-    } else if(v=="Paragraph"){
-      if(sampleCounter<0){
-        sampleCounter=Paragraph.length -1 
-      }
-      text.innerHTML = Paragraph[sampleCounter]
+      text.innerHTML = Body[sampleCounter]
     } else if(v=="Random"){
       if(sampleCounter<0){
         sampleCounter=Random.length -1 
@@ -287,21 +280,16 @@ samples.forEach(sample=>{
         sampleCounter = 0
       }
       text.innerHTML = Symbols[sampleCounter]
-    } else if(v=="Title"){
-      if(sampleCounter>=Title.length){
+    } else if(v=="Pangram"){
+      if(sampleCounter>=Pangram.length){
         sampleCounter = 0
       }
-      text.innerHTML = Title[sampleCounter]
-    } else if(v=="Sentence"){
-      if(sampleCounter>=Sentence.length){
+      text.innerHTML = Pangram[sampleCounter]
+    } else if(v=="Body"){
+      if(sampleCounter>=Body.length){
         sampleCounter = 0
       }
-      text.innerHTML = Sentence[sampleCounter]
-    } else if(v=="Paragraph"){
-      if(sampleCounter>=Paragraph.length){
-        sampleCounter = 0
-      }
-      text.innerHTML = Paragraph[sampleCounter]
+      text.innerHTML = Body[sampleCounter]
     } else if(v=="Random"){
       if(sampleCounter>=Random.length){
         sampleCounter = 0
@@ -529,7 +517,8 @@ tObserver.observe(testerText)
 
 
 
-
+const sampleRight = document.querySelector('div.sample-right-50')
+const sampleLeft = document.querySelector('div.sample-left-50')
 
   bwIcon.addEventListener('click', ()=>{
     stylesSection.classList.toggle('color-toggle-on')
@@ -541,7 +530,8 @@ tObserver.observe(testerText)
     menu.classList.toggle('color-toggle-on')
     
     if(stylesSection.classList.contains('color-toggle-on')){
-
+        sampleRight.classList.add('color')
+        console.log(sampleRight)
         bwIcon.src = "assets/B-W-black.png"
         headerBg.style.backgroundColor = "white"
         anchorTags.forEach(tag=>{

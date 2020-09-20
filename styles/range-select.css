@@ -106,7 +106,7 @@ input[type=range]{
     border: 1px solid var(--black);
     outline:none;
       display: block;
-      font-size: 22px;
+      font-size: 18px;
     font-variation-settings: 'wght' 200;
     letter-spacing: 0.9;
       line-height: 1.3;
