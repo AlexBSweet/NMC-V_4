@@ -337,6 +337,9 @@
     div.tf-download-right{
         margin-top: 60px;
     }
+    section.tf-download{
+        padding-top:0px;
+    }
     section.tf-download h1{
         max-width: 90%;
     }
