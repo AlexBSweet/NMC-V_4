@@ -328,6 +328,12 @@
     div.download-description{
         font-size:20px;
     }
+    div.download-link img{
+        max-width: 60px;
+    }
+    h2.download-text{
+        font-size:24px;
+    }
     div.tf-download-right{
         margin-top: 60px;
     }
@@ -342,7 +348,7 @@
         max-width: 100%;
     }
     section.tf-page-index div.index-container{
-        background-color:rgba(128, 128, 128, 0.075);
+        background-color:rgba(128, 128, 128, 0.137);
     }
     footer{
         padding-top:40px;

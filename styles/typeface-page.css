@@ -522,6 +522,8 @@ div.option:nth-child(3){
   }
   div.tf-download-left{
     width:40%;
+  }
+  div.tf-download-left p{
     font-variation-settings: 'wght' 100, 'slnt' 0;
   }
   div.download-description{
@@ -537,7 +539,7 @@ div.option:nth-child(3){
     font-size: 24px;
     padding-bottom:14px;
   }
-  p.download-text{
+  h2.download-text{
     font-size: 44px;
     font-family: NMC Red Mono;
     font-variation-settings: 'wght' 400;
