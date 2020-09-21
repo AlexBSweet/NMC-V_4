@@ -343,6 +343,7 @@
     div.dd-left{
         margin-bottom: 16px;
         width: 80%;
+        font-variation-settings: 'wght' 400;
     }
     div.dd-right{
         max-width: 100%;
