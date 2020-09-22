@@ -72,7 +72,7 @@ div.tf-header-right img{
 }
 .color-toggle-on{
   background-color: white !important;
-  color: black;
+  color: black !important;
 }
 section{
   transition: background-color .5s, color 0.5s;

@@ -510,6 +510,9 @@ tObserver.observe(testerText)
 
 const sampleRight = document.querySelector('div.sample-right-50')
 const sampleLeft = document.querySelector('div.sample-left-50')
+const downloadSection = document.querySelector('section.tf-download')
+const tfIndexSection = document.querySelector('section.tf-page-index')
+const indexContainers = document.querySelectorAll('div.index-container')
 
   bwIcon.addEventListener('click', ()=>{
     stylesSection.classList.toggle('color-toggle-on')
@@ -519,10 +522,15 @@ const sampleLeft = document.querySelector('div.sample-left-50')
     testerSection.classList.toggle('color-toggle-on')
     testerOptions.classList.toggle('color-toggle-on')
     menu.classList.toggle('color-toggle-on')
+    downloadSection.classList.toggle('color-toggle-on')
+    tfIndexSection.classList.toggle('color-toggle-on')
+    mainTag.classList.toggle('color-toggle-on')
+    indexContainers.forEach(container=>{
+      container.classList.toggle('color-toggle-on')
+    })
     
     if(stylesSection.classList.contains('color-toggle-on')){
         sampleRight.classList.add('color')
-        console.log(sampleRight)
         bwIcon.src = "assets/B-W-black.png"
         headerBg.style.backgroundColor = "white"
         anchorTags.forEach(tag=>{
