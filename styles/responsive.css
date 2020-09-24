@@ -275,6 +275,9 @@
         line-height: 1.4;
         padding-top:200px;
     }
+    section.index-intro br{
+        display:none;
+    }
    div.tf-header-left span{
        opacity: 0.5;
    }

@@ -14,7 +14,16 @@ const downloadLink = document.querySelector('a.download-link')
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
-    if(entry.intersectionRatio >= 1 && entry.target.classList.contains('tf-styles')) {
+      if(entry.intersectionRatio >= 0.5 && entry.target.classList.contains('tf-intro-start')) {
+        stylesLink.classList.remove('current-section')
+        infoLink.classList.remove('current-section')
+        samplesLink.classList.remove('current-section')
+        glyphsLink.classList.remove('current-section')
+        // downloadLink.classList.remove('current-section')
+        // samplesLink.classList.add('current-section')
+        // stylesLink.classList.remove('current-section')
+
+      } else if(entry.intersectionRatio >= 1 && entry.target.classList.contains('tf-styles')) {
        
         stylesLink.classList.add('current-section')
         infoLink.classList.remove('current-section')
@@ -62,14 +71,15 @@ const observer = new IntersectionObserver(
         // testerLink.classList.remove('current-section')
         // buyLink.classList.remove('current-section')
       }
-      // else if(entry.intersectionRatio >= 0.1 && entry.target.classList.contains('tf-download')) {
-      //   infoLink.classList.add('current-section')
-      //   testerLink.classList.remove('current-section')
-      //   samplesLink.classList.remove('current-section')
-      //   infoLink.classList.remove('current-section')
-      //   stylesLink.classList.remove('current-section')
-      //   glyphsLink.classList.remove('current-section')
-      // }
+      else if(entry.intersectionRatio >= 0.1 && entry.target.classList.contains('tf-download')) {
+        console.log('download')
+        infoLink.classList.add('current-section')
+        testerLink.classList.remove('current-section')
+        // samplesLink.classList.remove('current-section')
+        // infoLink.classList.remove('current-section')
+        // stylesLink.classList.remove('current-section')
+        // glyphsLink.classList.remove('current-section')
+      }
     })
   },
   {

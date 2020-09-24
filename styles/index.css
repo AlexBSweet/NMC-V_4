@@ -21,6 +21,7 @@ body{
     line-height: 1.25;
     /* position:absolute;
     width:100vw; */
+    /* transition: all 0.5s ease; */
 }
 section{
     box-sizing: border-box;
@@ -65,6 +66,7 @@ a.index-active{
 }
 div.header-bg{
     height:60px;
+    transition: all 0.5s ease;
 }
 
 
@@ -84,6 +86,14 @@ a.mm-site-title{
     right:32px;
     z-index: 6;
     cursor:pointer;
+  }
+  a.disabled-link{
+    color:gray;
+    font-variation-settings: 'wght' 100;
+  }
+  p.disabled-info{
+    position: absolute;
+    right:103px;
   }
   div.menu{
     position:fixed;
@@ -235,6 +245,7 @@ div.index-container{
     align-items: center;
     justify-content: center;
     background-color: black;
+    transition: all 0.5s ease;
 }
 .index-detail{
     position:absolute;
