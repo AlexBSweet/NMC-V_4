@@ -1,4 +1,15 @@
+const progressBar = document.querySelector('div.progress-bar')
 
+document.addEventListener('scroll', function(){
+    
+    const pageTop = window.pageYOffset
+    const pageHeight = bodyTag.getBoundingClientRect().height
+    const totalScrollableDistance = pageHeight - window.innerHeight
+    
+    const percentageWidth = pageTop / totalScrollableDistance
+    
+    progressBar.style.width = percentageWidth * 100 + '%'
+})
 
 
 
@@ -444,6 +455,7 @@ testerText.addEventListener('click', ()=>{
         testerText.innerHTML='Type anthing...'
         testerText.style.animation = 'none'
         testerText.style.opacity = 0.4
+        testerText.style.color = 'white'
       }
       
 })
@@ -523,6 +535,7 @@ const sampleLeft = document.querySelector('div.sample-left-50')
 const downloadSection = document.querySelector('section.tf-download')
 const tfIndexSection = document.querySelector('section.tf-page-index')
 const indexContainers = document.querySelectorAll('div.index-container')
+const sampleSelects = document.querySelectorAll('select.select-css')
 
   bwIcon.addEventListener('click', ()=>{
     // stylesSection.classList.toggle('color-toggle-on')
@@ -539,19 +552,22 @@ const indexContainers = document.querySelectorAll('div.index-container')
     // indexContainers.forEach(container=>{
     //   container.classList.toggle('color-toggle-on')
     // })
+    sampleSelects.forEach(select=>{
+      select.classList.toggle('color-toggle-on')
+    })
     
     if(bodyTag.classList.contains('color-toggle-on')){
         sampleRight.classList.add('color')
         bwIcon.src = "assets/B-W-black.png"
         
         anchorTags.forEach(tag=>{
-            tag.style.color = 'black'
+            tag.style.color = 'var(--black)'
         })
     } else{
         bwIcon.src = "assets/B-W-white.svg"
 
         anchorTags.forEach(tag=>{
-            tag.style.color = 'white'
+            tag.style.color = 'var(--white)'
         })
     }
 })

@@ -1,6 +1,12 @@
+:root{
+    --serata: #ff5741;
+}
 
+div.progress-bar{
+    background-color:var(--serata);
+    }
 section.tf-intro{
-    background-color: rgb(255, 65, 65);
+    background-color:var(--serata);
 }
 /* div.tf-intro-inner{
     top: 70vh;
@@ -114,7 +120,12 @@ div.baseline{
 
 
 
+/* a.tester-text{
+    color:var(--serata);
+} */
 
-h1.tester-text{
-    font-size:160px;
+
+
+.download-text{
+    color:var(--serata) !important;
 }

@@ -1,7 +1,12 @@
-
+:root{
+    --double:#36a4ee;
+}
+div.progress-bar{
+    background-color:var(--double);
+    }
 section.tf-intro{
     background-color: rgb(19, 19, 19);
-    color: rgb(54, 164, 238);
+    color: var(--double);
 }
 div.tf-intro-inner{
    bottom: 10vh;
@@ -13,6 +18,7 @@ h1.tf-page-title{
 div.tf-intro-left{
     margin-top:30px;
 }
+
 
 
 
@@ -98,4 +104,14 @@ div.active-glyph-container{
 }
 section.glyphs-category div{
     font-family: NMC Double;
+}
+
+
+/* a.tester-text{
+    color:var(--double);
+} */
+
+
+.download-text{
+    color:var(--double) !important;
 }

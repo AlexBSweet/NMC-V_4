@@ -1,6 +1,11 @@
-
+:root{
+    --grotesk:#2932b6;
+}
+div.progress-bar{
+    background-color:var(--grotesk);
+    }
 section.tf-intro{
-    background-color: rgb(41, 50, 182);
+    background-color: var(--grotesk);
     /* color: rgb(54, 164, 238); */
 }
 h1.tf-page-title{
@@ -154,6 +159,12 @@ div.baseline{
 
 
 
-h1.tester-text{
-    font-size:160px;
+/* a.tester-text{
+    color:var(--grotesk);
+} */
+
+
+
+.download-text{
+    color:var(--grotesk) !important;
 }

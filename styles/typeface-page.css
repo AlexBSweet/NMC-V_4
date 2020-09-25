@@ -13,9 +13,16 @@ html{
   }
 }
 
-
+div.progress-bar{
+  width:0px;
+  position:fixed;
+  top:0;
+  left:0;
+  height:3px;
+  z-index: 12;
+  }
 div.header-bg{
-  background-color:black;
+  background-color:var(--black);
   width:100vw;
   position:fixed;
   top:0;
@@ -70,8 +77,8 @@ div.tf-header-right img{
   cursor: pointer;
 }
 .color-toggle-on{
-  background-color: white !important;
-  color: black !important;
+  background-color: var(--white) !important;
+  color: var(--black) !important;
   transition: var(--transition);
 }
 
@@ -139,7 +146,7 @@ h1.tf-page-title{
 h1.mobile-section-header{
   /* margin-bottom: 30px; */
   background-color:rgb(0, 0, 0);
-  color:white;
+  color:var(--white);
   font-size: 16px;
 }
 .padding{
@@ -513,9 +520,6 @@ div.option:nth-child(3){
     justify-content: space-between;
     grid-gap: 44px;
     padding:var(--padding);
-    color: #aaaaaa;
-    /* border-top:1px solid; */
-    /* margin-top:300px; */
     padding-bottom: 250px;
     padding-top: 100px;
     max-width: 100%;
@@ -544,14 +548,10 @@ div.option:nth-child(3){
     font-size: 44px;
     font-family: NMC Red Mono;
     font-variation-settings: 'wght' 400;
-    color: #aaaaaa;
     margin-top:20px;
   }
   div.tf-download-right{
     width:50%;
-  }
-  div.download-details{
-    color: #aaaaaa;
   }
   div.download-detail{
     border-top: 1px solid;

@@ -1,6 +1,11 @@
-
+:root{
+    --red-mono:#331c1c;
+}
+div.progress-bar{
+    background-color:var(--red-mono);
+    }
 section.tf-intro{
-    background-color: rgb(95, 28, 28);
+    background-color: var(--red-mono);
 }
 div.tf-intro-inner{
     bottom: 5vh;
@@ -81,8 +86,10 @@ div.tf-intro-right-inner div p{
 
 
 
-
-
+/* a.tester-text{
+    color:var(--red-mono);
+}
+ */
 
 
 
@@ -129,4 +136,10 @@ div.baseline{
       p.micro{
           font-size:10px;
       }
+}
+
+
+
+.download-text{
+    color:var(--red-mono) !important;
 }

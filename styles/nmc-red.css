@@ -1,6 +1,12 @@
+:root{
+    --red:#f53030;
+}
 
+div.progress-bar{
+    background-color:var(--red);
+    }
 section.tf-intro{
-    background-color: rgb(245, 48, 48);
+    background-color: var(--red);
 }
 h1.tf-page-title{
     font-size: 14vw;
@@ -115,9 +121,9 @@ div.baseline{
 /* section.tf-tester{
     background-color:var(--red);
   } */
-h1.tester-text{
-    font-size:160px;
-}
+  /* a.tester-text{
+    color:var(--red);
+} */
 
 
 
@@ -139,4 +145,12 @@ h1.tester-text{
     div.option:nth-child(4){
         display:none;
     }
+}
+
+
+
+
+
+.download-text{
+    color:var(--red) !important;
 }

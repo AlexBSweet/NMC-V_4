@@ -101,9 +101,9 @@ input[type=range]{
   
   
   .select-css {
-    color:var(--black);
+    color:var(--white);
     border: 1px solid transparent;
-    border: 1px solid var(--black);
+    /* border: 1px solid var(--black); */
     outline:none;
       display: block;
       font-size: 18px;
@@ -123,6 +123,9 @@ input[type=range]{
       background-repeat: no-repeat, repeat;
       background-position: right .7em top 50%, 0 0;
       background-size: .65em auto, 100%;
+  }
+  .select-css.color-toggle-on{
+    color:var(--black);
   }
   .select-css::-ms-expand {
       display: none;

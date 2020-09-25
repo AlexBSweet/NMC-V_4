@@ -1,8 +1,11 @@
-/* a.styles-link{
-    display:none;
-} */
+:root{
+    --griffe:#37a080;
+}
+div.progress-bar{
+    background-color:var(--griffe);
+    }
 section.tf-intro{
-    background-color: rgb(55, 160, 128);
+    background-color: var(--griffe);
     /* color: rgb(54, 164, 238); */
 }
 div.tf-intro-inner{
@@ -120,6 +123,11 @@ div.baseline{
 
 
 
-h1.tester-text{
-    font-size:160px;
+/* a.tester-text{
+    color:var(--griffe);
+} */
+
+
+.download-text{
+    color:var(--griffe) !important;
 }

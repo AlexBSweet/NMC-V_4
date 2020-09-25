@@ -1,7 +1,8 @@
 :root {
+    --black: #0f0f0f;
+    --white: #a3a3a3;
     --bg-color: #070707;
     --dark-grey:#0c0c0c;
-    --white: #fff;
     --lg:#f3f3f3;
     --red: #FF2B2B;
     --mid-gray-1: #575757;
@@ -12,7 +13,7 @@
     --transition-long: all 1.1s linear;
 }
 body{
-    background-color: black;
+    background-color: var(--black);
     color:var(--white);
     font-family: NMC Red;
     margin:0;
@@ -62,7 +63,7 @@ a.header-index{
     color:gray;
 }
 a.index-active{
-    color:white;
+    color:var(--white);
 }
 div.header-bg{
     height:60px;
@@ -187,7 +188,7 @@ a.mm-site-title{
   }
   div.mm-font-inner.active{
     background-color:rgba(255, 255, 255, 0.76);
-    color:black;
+    color:var(--black);
   }
   
   
@@ -243,7 +244,7 @@ div.index-container{
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--black);
     transition: all 0.5s ease;
 }
 .index-detail{
@@ -309,7 +310,7 @@ div.footer-links a{
     color:var(--mid-gray-2) !important;
 }
 div.footer-links a:hover{
-    color:white;
+    color:var(--white);
 }
 p.top-link{
     background-color:var(--white);
