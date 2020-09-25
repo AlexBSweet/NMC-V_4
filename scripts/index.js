@@ -65,7 +65,7 @@ const indexIntro = document.querySelector('section.index-intro')
 window.addEventListener('scroll', ()=>{
 
     pixels = window.pageYOffset
-    let pxDamp = pixels / 500
+    let pxDamp = pixels / 300
     if(indexIntro){
         indexIntro.style.opacity = 1- pxDamp
     }

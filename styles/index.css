@@ -1,6 +1,7 @@
+
 :root {
     --black: #0f0f0f;
-    --white: #a3a3a3;
+    --white: #eeeeee;
     --bg-color: #070707;
     --dark-grey:#0c0c0c;
     --lg:#f3f3f3;
@@ -18,10 +19,10 @@ body{
     font-family: NMC Red;
     margin:0;
     padding:0;
-    /* overflow-x: hidden; */
     line-height: 1.25;
-    /* position:absolute;
-    width:100vw; */
+    position:relative;
+    /* overflow-x: hidden; */
+    width:100vw;
     transition: var(--transition);
 }
 section{
@@ -92,7 +93,7 @@ a.mm-site-title{
     font-variation-settings: 'wght' 100;
   }
   p.disabled-info{
-    position: absolute;
+    margin-top:30px;
     right:103px;
   }
   div.menu{
@@ -237,16 +238,19 @@ section.index-content{
 }
 
 div.index-container{
-    border: 1px solid var(--dark-grey);
-    width:33.3333333vw;
-    height:33.3333333vw;
+    /* border: 1px solid var(--dark-grey); */
+    width:32.8333333vw;
+    height:32.8333333vw;
     position:relative;
     display:flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+}
+/* section.index-index div.index-container{
     background-color: var(--black);
     transition: all 0.5s ease;
-}
+} */
 .index-detail{
     position:absolute;
 }

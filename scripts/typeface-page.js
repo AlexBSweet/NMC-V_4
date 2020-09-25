@@ -14,6 +14,8 @@ document.addEventListener('scroll', function(){
 
 
 
+
+
 const sections = document.querySelectorAll('.section-start')
 const stylesLink = document.querySelector('a.styles-link')
 const samplesLink = document.querySelector('a.samples-link')
@@ -130,7 +132,7 @@ if(pixels>window.innerHeight){
 const introOpacity = ()=>{
   window.addEventListener('scroll', ()=>{
     pixels = window.pageYOffset
-    let pxDamp = pixels / 750
+    let pxDamp = pixels / 500
 
     tfIntroSection.style.opacity = 1- pxDamp
 
@@ -455,7 +457,7 @@ testerText.addEventListener('click', ()=>{
         testerText.innerHTML='Type anthing...'
         testerText.style.animation = 'none'
         testerText.style.opacity = 0.4
-        testerText.style.color = 'white'
+        // testerText.style.color = 'white'
       }
       
 })
