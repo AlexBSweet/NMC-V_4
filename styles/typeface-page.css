@@ -22,7 +22,7 @@ div.header-bg{
   left:0;
   height:80px;
   z-index: 3;
-  transition: all 0.5s ease;
+  transition: var(--transition);
 }
 header.tf-header{
     /* height:60px; */
@@ -35,9 +35,8 @@ header.tf-header{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    /* background-color: black; */
+    background:none;
     font-size: 24px;
-    transition: 0.5s;
 }
 header.tf-header div{
     opacity: 1;
@@ -73,10 +72,9 @@ div.tf-header-right img{
 .color-toggle-on{
   background-color: white !important;
   color: black !important;
+  transition: var(--transition);
 }
-section{
-  transition: background-color .5s, color 0.5s ease;
-}
+
 div.tf-header-right-mobile{
   display: none;
   cursor:pointer;
@@ -84,10 +82,7 @@ div.tf-header-right-mobile{
 
 
 
-main{
-    background-color: black;
-    transition: all 0.ts ease;
-}
+
 main.menu-open{
   opacity:0.15;
 }
@@ -157,7 +152,7 @@ h1.mobile-section-header{
 
 
 section.tf-styles{
-    background-color: #000;
+    /* background-color: #000; */
     position: relative;
     z-index: 2;
     padding: var(--padding);
@@ -170,7 +165,6 @@ div.section-start.tf-styles{
   position: relative;
   height: 40px;
   width: 40px;
-  background-color: orange;
   top: 200px;
 }
 div.tf-styles-left{
@@ -224,7 +218,6 @@ section.tf-samples{
     padding:var(--padding);
     padding-bottom: 150px;;
     padding-top:150px;
-    background-color: black;
     position: relative;
     z-index: 2;
     box-sizing: border-box;
@@ -317,7 +310,6 @@ div.option:nth-child(3){
     display: flex;
     border-top:1px solid;
     border-bottom:1px solid;
-    background-color: black;
     position: relative;
     z-index: 2;
   }
@@ -445,7 +437,6 @@ div.option:nth-child(3){
   div.section-start.tf-tester{
     width:40px;
     height:40px;
-    /* background-color:blue; */
     position:absolute;
     top:40%;
     left:0;
@@ -460,7 +451,6 @@ div.option:nth-child(3){
     cursor:pointer;
     font-size:120px;
     margin-top:200px;
-    /* transition: opacity 0.2s; */
     animation: blink 2s ease infinite;
     outline:none;
     min-height:70vh;
@@ -482,7 +472,7 @@ div.option:nth-child(3){
     display:grid;
     grid-template-columns: repeat(18, 1fr);
     grid-gap: 36px;
-    transition: all 0.5s ease;
+    transition: var(--transition);
   }
   div.tester-options.open{
     transform:translateY(0);
@@ -590,4 +580,7 @@ span.beta{
 
 section.tf-page-index{
   padding-top:100px;
+}
+section.tf-page-index div.index-container{
+  background:none;
 }

@@ -119,7 +119,7 @@ if(pixels>window.innerHeight){
 const introOpacity = ()=>{
   window.addEventListener('scroll', ()=>{
     pixels = window.pageYOffset
-    let pxDamp = pixels / 1000
+    let pxDamp = pixels / 750
 
     tfIntroSection.style.opacity = 1- pxDamp
 
@@ -525,30 +525,31 @@ const tfIndexSection = document.querySelector('section.tf-page-index')
 const indexContainers = document.querySelectorAll('div.index-container')
 
   bwIcon.addEventListener('click', ()=>{
-    stylesSection.classList.toggle('color-toggle-on')
-    samplesSection.classList.toggle('color-toggle-on')
+    // stylesSection.classList.toggle('color-toggle-on')
+    // samplesSection.classList.toggle('color-toggle-on')
     bodyTag.classList.toggle('color-toggle-on')
-    glyphsSection.classList.toggle('color-toggle-on')
-    testerSection.classList.toggle('color-toggle-on')
-    testerOptions.classList.toggle('color-toggle-on')
+    // glyphsSection.classList.toggle('color-toggle-on')
+    // testerSection.classList.toggle('color-toggle-on')
+    // testerOptions.classList.toggle('color-toggle-on')
     menu.classList.toggle('color-toggle-on')
-    downloadSection.classList.toggle('color-toggle-on')
-    tfIndexSection.classList.toggle('color-toggle-on')
-    mainTag.classList.toggle('color-toggle-on')
-    indexContainers.forEach(container=>{
-      container.classList.toggle('color-toggle-on')
-    })
+    // downloadSection.classList.toggle('color-toggle-on')
+    // tfIndexSection.classList.toggle('color-toggle-on')
+    // mainTag.classList.toggle('color-toggle-on')
+    headerBg.classList.toggle('color-toggle-on')
+    // indexContainers.forEach(container=>{
+    //   container.classList.toggle('color-toggle-on')
+    // })
     
-    if(stylesSection.classList.contains('color-toggle-on')){
+    if(bodyTag.classList.contains('color-toggle-on')){
         sampleRight.classList.add('color')
         bwIcon.src = "assets/B-W-black.png"
-        headerBg.style.backgroundColor = "white"
+        
         anchorTags.forEach(tag=>{
             tag.style.color = 'black'
         })
     } else{
         bwIcon.src = "assets/B-W-white.svg"
-        headerBg.style.backgroundColor = "black"
+
         anchorTags.forEach(tag=>{
             tag.style.color = 'white'
         })
