@@ -145,13 +145,40 @@ div.baseline{
 }
 
 
+div.active-glyph-container{
+    font-variant-ligatures: discretionary-ligatures;
+}
+section.glyphs-ligatures{
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+section.ss01 div{
+    font-feature-settings: 'ss01';
+}
+div.active-glyph-container.ss01{
+    font-feature-settings: 'ss01';
+}
+
+section.ss02 div{
+    font-feature-settings: 'ss02';
+}
+div.active-glyph-container.ss02{
+    font-feature-settings: 'ss02';
+}
+
+section.ss03 div{
+    font-feature-settings: 'ss03';
+}
+div.active-glyph-container.ss03{
+    font-feature-settings: 'ss03';
+}
 
 
-
-
-
-.glyphs-lining-numbers div{
-    font-variant-numeric: lining-nums;
+section.glyphs-lining-numerals div{
+    font-variant-numeric: lining-nums;  
+}
+div.active-glyph-container.lnum{
+    font-variant-numeric: lining-nums; 
 }
 
 

@@ -412,7 +412,8 @@ const introGlyphsSection = () =>{
   //       }
   //     })
   // })
-   
+
+
     glyphs.forEach(glyph=>{
 
       glyph.addEventListener('mouseenter', ()=>{
@@ -420,9 +421,10 @@ const introGlyphsSection = () =>{
         activeGlyphContainer.innerHTML = hoveredGlyph
 
 
+// GLYPH NAME ==========================================
         const glyphName = glyph.getAttribute('data-name')
         detailsOne.innerHTML = glyphName
-        
+
 
         var hex = hoveredGlyph.codePointAt(0).toString(16);
         var result = "\\u" + "0000".substring(0, 4 - hex.length) + hex;
@@ -430,6 +432,30 @@ const introGlyphsSection = () =>{
         var formattedUnicode = 'U+' + unicode.slice(1, 5)
 
         detailsTwo.innerHTML = formattedUnicode
+
+// OPENTYPE FEATURES==========================================
+        const openType = glyph.getAttribute('data-opentype')
+        
+        if(openType == 'ss01'){
+          activeGlyphContainer.classList.add('ss01')
+        } else{
+          activeGlyphContainer.classList.remove('ss01')
+        }
+        if(openType == 'ss02'){
+          activeGlyphContainer.classList.add('ss02')
+        } else{
+          activeGlyphContainer.classList.remove('ss02')
+        }
+        if(openType == 'ss03'){
+          activeGlyphContainer.classList.add('ss03')
+        } else{
+          activeGlyphContainer.classList.remove('ss03')
+        }
+        if(openType == 'lnum'){
+          activeGlyphContainer.classList.add('lnum')
+        } else{
+          activeGlyphContainer.classList.remove('lnum')
+        }
      
       })
     })
