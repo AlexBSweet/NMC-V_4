@@ -150,9 +150,9 @@ div.baseline{
 
 
 
-/* a.tester-text{
-    color:var(--serata-text);
-} */
+.glyphs-lining-numbers div{
+    font-variant-numeric: lining-nums;
+}
 
 
 .download-text{

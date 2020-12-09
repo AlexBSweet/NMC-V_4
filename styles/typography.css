@@ -85,40 +85,40 @@
 
 
 
-/* NMC SELATA DISPLAY STYLES ===================================================================*/
+/* NMC SERATA DISPLAY STYLES ===================================================================*/
 @font-face{
     font-family: "NMC Serata Display Thin";
-    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Thin.otf);
+    src: url(../fonts/nmc-serata/display/NMCSeratav1.0-Thin.woff2);
     font-weight: 100;
 }
 @font-face{
     font-family: "NMC Serata Display Extra-Light";
-    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Extra-Light.otf);
+    src: url(../fonts/nmc-serata/display/NMCSeratav1.0-Extra-Light.woff2);
     font-weight: 200;
 }
 @font-face{
     font-family: "NMC Serata Display Light";
-    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Light.otf);
+    src: url(../fonts/nmc-serata/display/NMCSeratav1.0-Light.woff2);
     font-weight: 300;
 }
 @font-face{
     font-family: "NMC Serata Display Regular";
-    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Regular.otf);
+    src: url(../fonts/nmc-serata/display/NMCSeratav1.0-Regular.woff2);
     font-weight: 400;
 }
 @font-face{
     font-family: "NMC Serata Display Medium";
-    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Medium.otf);
+    src: url(../fonts/nmc-serata/display/NMCSeratav1.0-Medium.woff2);
     font-weight: 500;
 }
 @font-face{
     font-family: "NMC Serata Display Semi-Bold";
-    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Semi-Bold.otf);
+    src: url(../fonts/nmc-serata/display/NMCSeratav1.0-Semi-Bold.woff2);
     font-weight: 600;
 }
 @font-face{
     font-family: "NMC Serata Display Bold";
-    src: url(../fonts/nmc-selata/display/NMCSelataDisplayv0.6-Bold.otf);
+    src: url(../fonts/nmc-serata/display/NMCSeratav1.0-Bold.woff2);
     font-weight: 700;
 }
 .nmc-serata-d-t{
@@ -148,30 +148,30 @@
 
 
 
-/* NMC SELATA TEXT STYLES ===================================================================*/
+/* NMC SERATA TEXT STYLES ===================================================================*/
 @font-face{
     font-family: "NMC Serata Text Light";
-    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-LightText.otf);
+    src: url(../fonts/nmc-serata/text/NMCSerataTextv1.0-Light.woff2);
     font-weight: 300;
 }
 @font-face{
     font-family: "NMC Serata Text Regular";
-    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-RegularText.otf);
+    src: url(../fonts/nmc-serata/text/NMCSerataTextv1.0-Regular.woff2);
     font-weight: 300;
 }
 @font-face{
     font-family: "NMC Serata Text Medium";
-    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-MediumText.otf);
+    src: url(../fonts/nmc-serata/text/NMCSerataTextv1.0-Medium.woff2);
     font-weight: 300;
 }
 @font-face{
     font-family: "NMC Serata Text Semi-Bold";
-    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-Semi-Boldtext.otf);
+    src: url(../fonts/nmc-serata/text/NMCSerataTextv1.0-Semi-Bold.woff2);
     font-weight: 300;
 }
 @font-face{
     font-family: "NMC Serata Text Bold";
-    src: url(../fonts/nmc-selata/text/NMCSelataTextv0.4-BoldText.otf);
+    src: url(../fonts/nmc-serata/text/NMCSerataTextv1.0-Bold.woff2);
     font-weight: 300;
 }
 .nmc-serata-t-l{
